@@ -1,0 +1,2 @@
+<?php
+//The archive post type template is used when visitors request a custom post type archive. For example, archive-books.php would be used for displaying an archive of posts from the custom post type named books. The archive template file is used if the archive-{post-type} template is not present.

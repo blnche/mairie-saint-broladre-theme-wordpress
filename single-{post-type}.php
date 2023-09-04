@@ -1,0 +1,2 @@
+<?php
+//The single post template used when a visitor requests a single post from a custom post type. For example, single-book.php would be used for displaying single posts from a custom post type named book.
