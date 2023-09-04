@@ -92,4 +92,14 @@ if ( !function_exists('mairiesaintbroladretheme_setup')) {
 }
 add_action('after_setup_theme', 'mairiesaintbroladretheme_setup');
 
+function register_my_menus()
+{
+    register_nav_menus(
+        array(
+            'primary' => __('Primary Menu', 'mairiesaintbroladretheme'),
+            'secondary' => __('Secondary Menu', 'mairiesaintbroladretheme')
+        )
+    );
+};
+add_action('init', 'register_my_menus');
 ?>
