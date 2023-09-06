@@ -1,4 +1,5 @@
 <?php get_header() ?>
+<h1><?php esc_attr(the_title()); ?></h1>
 <?php
     wp_nav_menu(
         array(

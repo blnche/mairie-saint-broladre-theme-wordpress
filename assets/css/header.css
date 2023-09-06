@@ -22,7 +22,7 @@ header h1 {
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 1rem;
-    color: white;
+    /*color: white;*/
 }
 
 header p {
@@ -43,7 +43,7 @@ header .menu-menu-principal-container ul {
 }
 
 header .menu-menu-principal-container ul li a {
-    color: white;
+    /*color: white;*/
     font-family: "Neue Montreal Medium";
     font-size: 1.75rem;
     letter-spacing: 0.25rem;

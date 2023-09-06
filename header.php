@@ -43,4 +43,4 @@
         </a>
     </li>
 </menu>
-<main>
+<main class="container grid">
