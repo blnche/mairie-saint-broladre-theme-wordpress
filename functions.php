@@ -1,9 +1,9 @@
 <?php
 /**
- * MairieSaintBroladreTheme's functions and definitions
+ * MairieTheme's functions and definitions
  *
- * @package MairieSaintBroladreTheme
- * @since MairieSaintBroladreTheme 1.0
+ * @package MairieTheme
+ * @since MairieTheme 1.0
  */
 
 /**
@@ -15,7 +15,7 @@ if ( ! isset( $content_width ) ) {
     $content_width = 800; /* pixels */
 }
 
-if ( !function_exists('mairiesaintbroladretheme_setup')) {
+if ( !function_exists('mairie_setup')) {
     /**
      * Sets up theme defaults and registers support for various WordPress features.
      *
@@ -27,12 +27,12 @@ if ( !function_exists('mairiesaintbroladretheme_setup')) {
      *
      * @return void
      */
-    function mairiesaintbroladretheme_setup() {
+    function mairie_setup() {
         /**
          * Make theme available for translation.
          * Translations can be placed in the /languages/ directory.
          */
-        load_theme_textdomain( 'mairiesaintbroladretheme', get_template_directory() . '/languages' );
+        load_theme_textdomain( 'mairie', get_template_directory() . '/languages' );
 
         /**
          * Add default posts and comments RSS feed links to <head>.
@@ -48,10 +48,13 @@ if ( !function_exists('mairiesaintbroladretheme_setup')) {
         /**
          * Add support for two custom navigation menus.
          */
-        register_nav_menus( array(
-            'primary'   => __( 'Primary Menu', 'mairiesaintbroladretheme' ),
-            'secondary' => __( 'Secondary Menu', 'mairiesaintbroladretheme' )
-        ) );
+        /*register_nav_menus(
+            array(
+                'header'   => __( 'Menu du haut de page', 'mairie' ),
+                'footer' => __( 'Menu de bas de page', 'mairie' ),
+                'home' => __('Menu de la page d\'accueil', 'mairie')
+            )
+        );*/
 
         /**
          * Enable support for the following post formats:
@@ -88,18 +91,33 @@ if ( !function_exists('mairiesaintbroladretheme_setup')) {
         add_theme_support( 'editor-styles' );
 
         add_theme_support( 'responsive-embeds' );
+        add_theme_support('custom-logo');
     }
 }
-add_action('after_setup_theme', 'mairiesaintbroladretheme_setup');
+add_action('after_setup_theme', 'mairie_setup');
 
 function register_my_menus()
 {
     register_nav_menus(
         array(
-            'primary' => __('Primary Menu', 'mairiesaintbroladretheme'),
-            'secondary' => __('Secondary Menu', 'mairiesaintbroladretheme')
+            'header' => __('Menu du haut de page', 'mairie'),
+            'footer' => __('Menu de bas de page', 'mairie'),
+            'home' => __('Menu de la page d\'accueil', 'mairie')
         )
     );
 };
 add_action('init', 'register_my_menus');
+
+function mairie_custom_header_setup() {
+    $args = array(
+        'default-text-color' => 'fff',
+        'header-text' => false,
+        'width' => 900,
+        'height' => 250,
+        'flex-width' => true,
+        'flex-height' => true,
+    );
+    add_theme_support('custom-header', $args);
+}
+add_action('after_setup_theme', 'mairie_custom_header_setup');
 ?>

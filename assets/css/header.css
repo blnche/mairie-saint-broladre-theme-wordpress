@@ -1,0 +1,74 @@
+header {
+    background-color: white;
+    height: 45vh;
+    margin-bottom: 4rem;
+}
+
+header .header section {
+    margin-bottom: 6rem;
+}
+
+header .header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+header h1 {
+    font-family: "Romie Heavy";
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+header p {
+    font-family: 'Neue Montreal Thin';
+    text-align: center;
+}
+
+header .menu-menu-principal-container {
+    width: 100%;
+}
+
+header .menu-menu-principal-container ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-block: 2.75rem;
+    width: 100%;
+}
+
+header .menu-menu-principal-container ul li a {
+    color: white;
+    font-family: "Neue Montreal Medium";
+    font-size: 1.75rem;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border-radius: 0.5rem;
+}
+
+header .menu-menu-principal-container ul li a:hover {
+    color: var(--text);
+    background-color: var(--background);
+}
+
+header .menu-menu-principal-container ul li a[aria-current="page"] {
+    font-weight: bolder;
+    color: var(--text);
+    background-color: var(--background);
+    border: 1.5px solid var(--background); /*permet d'avoir un rectangle plus large que les autres links*/
+    border-bottom: 3.5px solid var(--accent);
+}
+
+.espace_famille {
+    border: 3px solid var(--box-border);
+    background: var(--background-lighter);
+    color: var(--text);
+    font-weight: bolder;
+}
