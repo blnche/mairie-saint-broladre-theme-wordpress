@@ -111,7 +111,7 @@ add_action('init', 'register_my_menus');
 function mairie_custom_header_setup() {
     $args = array(
         'default-text-color' => 'fff',
-        'header-text' => false,
+        'header-text' => true,
         'width' => 900,
         'height' => 250,
         'flex-width' => true,
@@ -119,5 +119,21 @@ function mairie_custom_header_setup() {
     );
     add_theme_support('custom-header', $args);
 }
-add_action('after_setup_theme', 'mairie_custom_header_setup');
+add_action('after_setup_theme', 'mairie_custom_header_setup', 1);
+
+// Register a custom setting in the Theme Customizer
+/*function theme_customizer_register($wp_customize) {
+    $wp_customize->add_setting('display_header_text', array(
+        'default' => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+
+    $wp_customize->add_control('display_header_text', array(
+        'label' => __('Custom Header Text', 'your-theme-text-domain'),
+        'section' => 'title_tagline',
+        'type' => 'text',
+    ));
+}
+add_action('customize_register', 'theme_customizer_register');*/
+
 ?>

@@ -15,20 +15,18 @@
 </head>
 <body>
 <header>
+    <img src="<?php header_image(); ?>" width="<?php echo absint(get_custom_header()->width); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name') ); ?>">
     <section class="container header">
-        <section>
-            <img src="<?php header_image(); ?>" width="<?php echo absint(get_custom_header()->width); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name') ); ?>">
-            <h1>Mairie de <?php echo esc_attr(get_bloginfo( 'name' ));?></h1>
-        </section>
-        <?php
-            wp_nav_menu(
-                array(
-                    'theme_location' => 'header',
-                    'items_wrap' => '<ul id="" class="">%3$s</ul>'
-                )
-            );
-            get_search_form();
-        ?>
+        <h1>Mairie de <?php echo esc_attr(get_bloginfo( 'name' ));?></h1>
+    <?php
+        wp_nav_menu(
+            array(
+                'theme_location' => 'header',
+                'items_wrap' => '<ul id="" class="">%3$s</ul>'
+            )
+        );
+        get_search_form();
+    ?>
     </section>
 </header>
 <menu id="interactive_menu">
