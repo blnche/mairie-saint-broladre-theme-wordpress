@@ -18,15 +18,17 @@
     <img src="<?php header_image(); ?>" width="<?php echo absint(get_custom_header()->width); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name') ); ?>">
     <section class="container header">
         <h1>Mairie de <?php echo esc_attr(get_bloginfo( 'name' ));?></h1>
-    <?php
-        wp_nav_menu(
-            array(
-                'theme_location' => 'header',
-                'items_wrap' => '<ul id="" class="">%3$s</ul>'
-            )
-        );
-        get_search_form();
-    ?>
+        <nav>
+        <?php
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'header',
+                    'items_wrap' => '<ul id="" class="">%3$s</ul>'
+                )
+            );
+            get_search_form();
+        ?>
+        </nav>
     </section>
 </header>
 <menu id="interactive_menu">
