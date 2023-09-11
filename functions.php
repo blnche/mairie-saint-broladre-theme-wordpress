@@ -135,5 +135,10 @@ add_action('after_setup_theme', 'mairie_custom_header_setup', 1);
     ));
 }
 add_action('customize_register', 'theme_customizer_register');*/
+function getNavigationMenu()
+{
+    $items = wp_get_nav_menu_items('Menu de la page d\'accueil');
 
+    return $items;
+}
 ?>

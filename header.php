@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />
     <title><?php echo get_bloginfo( 'name' );?></title>
 </head>
-<body>
+<body id="page_start">
 <header>
     <img src="<?php header_image(); ?>" width="<?php echo absint(get_custom_header()->width); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name') ); ?>">
     <section class="container header">
@@ -34,12 +34,12 @@
 <menu id="interactive_menu">
     <li>
         <a id="themeBtn">
-            <i class="fa-solid fa-2xl fa-circle-half-stroke"></i>
+            <img width="96" height="96" src="https://img.icons8.com/plumpy/96/000000/contrast.png" alt="contrast"/>
         </a>
     </li>
     <li>
         <a href="#page_start" id="arrowUpBtn">
-            <i class="fa-solid fa-arrow-up fa-2xl"></i>
+            <img width="96" height="96" src="https://img.icons8.com/plumpy/96/000000/up--v1.png" alt="up--v1"/>
         </a>
     </li>
 </menu>

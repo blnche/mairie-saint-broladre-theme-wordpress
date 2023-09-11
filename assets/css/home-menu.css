@@ -1,0 +1,31 @@
+.mairie-menu-container {
+
+}
+
+.mairie-menu {
+
+}
+
+.mairie-menu-container .mairie-menu a {
+    width: 170px;
+    height: 145px;
+    margin-bottom: 4rem;
+    padding: 2rem 4rem;
+
+    background-color: var(--background);
+    border: 1px solid var(--box-border);
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mairie-menu-container .mairie-menu a .svg-container img {
+    width: 70px;
+    height: 70px;
+}
+
+.mairie-menu-container .mairie-menu a .label {
+    text-transform: uppercase;
+}

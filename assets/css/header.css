@@ -57,7 +57,7 @@ header .menu-menu-principal-container ul {
 }
 
 header .menu-menu-principal-container ul li a {
-    color: white;
+    color: var(--text);
     font-family: "Neue Montreal Medium";
     font-size: 1.75rem;
     letter-spacing: 0.25rem;
@@ -65,6 +65,7 @@ header .menu-menu-principal-container ul li a {
     padding-inline: 2rem;
     padding-block: 1rem;
     border-radius: 0.5rem;
+    background-color: var(--background-lighter);
 }
 
 header .menu-menu-principal-container ul li a:hover {
