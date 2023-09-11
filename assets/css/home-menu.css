@@ -43,4 +43,10 @@
 
 .mairie-menu-container .mairie-menu a .label {
     text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    line-height: 1.2;
 }
