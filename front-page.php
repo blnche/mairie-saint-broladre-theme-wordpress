@@ -10,11 +10,11 @@
                 <img src="
                     <?php
                         if ($item->title === 'Conseil Municipal') {
-                            echo get_parent_theme_file_uri('assets/images/icons8-key.svg');
+                            echo get_parent_theme_file_uri('assets/images/icons8-placeholder-96.png');
                         } else if ($item->title === 'Location de salles') {
-                            echo get_parent_theme_file_uri('assets/images/keys.png');
+                            echo get_parent_theme_file_uri('assets/images/icons8-placeholder-96.png');
                         } else {
-                            echo get_parent_theme_file_uri('assets/images/key.png');
+                            echo get_parent_theme_file_uri('assets/images/icons8-placeholder-96.png');
                         }
                     ?>
                 ">
