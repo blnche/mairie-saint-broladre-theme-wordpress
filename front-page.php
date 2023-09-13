@@ -24,6 +24,48 @@
         <?php }?>
     </nav>
 </section>
+<section>
+    <section>
+        <h2>Actualités</h2>
+        <?php
+            $latest_posts = get_posts(array(
+                    'post_type' => 'post',
+                'posts_per_page' => 1,
+            ));
+            if ($latest_posts) {
+                foreach ($latest_posts as $post) {
+                    setup_postdata($post); ?>
+        <article>
+            <header>
+                <?php
+                    if (has_post_thumbnail()) {
+                        the_post_thumbnail('custom-size', 200, 100, true);
+                    }
+                ?>
+            </header>
+            <section>
+                <h3><?php the_title(); ?></h3>
+                <p><?php the_excerpt(); ?></p>
+            </section>
+            <footer>
+                <a href="<?php the_permalink(); ?>">Lire la suite</a>
+            </footer>
+        </article>
+               <?php }
+                wp_reset_postdata();
+            }
+
+        ?>
+    </section>
+    <section>
+        <h2>Agenda</h2>
+        <?php $events = get_em_events();
+        var_dump($events);?>
+        <ul>
+            <li>Event</li>
+        </ul>
+    </section>
+</section>
 <?php
     //wp_nav_menu(
       //  array(
