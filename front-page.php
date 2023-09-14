@@ -60,7 +60,7 @@
     <section>
         <h2>Agenda</h2>
         <?php $events = get_em_events();
-        var_dump($events);?>
+        var_dump($events );?>
         <ul>
             <li>Event</li>
         </ul>
