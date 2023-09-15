@@ -1,0 +1,75 @@
+@import url('/assets/style/reset.css');
+@import url('/assets/style/header.css');
+@import url('/assets/style/footer.css');
+@import url('/assets/style/front-page.css');
+
+body > :nth-child(even) {
+    background-color: rgb(192, 96, 96);
+}
+
+body > :nth-child(odd) {
+    background-color: rgb(128, 128, 196);
+}
+
+/* 
+    =============
+        MOBILE
+    =============
+*/
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .main, .footer {
+    width: 100%;
+}
+
+.menu-container {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /*line-height: 4rem;*/
+}
+
+/* 
+    =============
+        DESKTOP
+    =============
+*/
+
+@media (min-width: 1024px) {
+    body {
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+    .container {
+        min-width: 80%;
+        max-width: 90%;
+    }
+    .menu-container {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /*line-height: 4rem;*/
+    }
+}
+
+/* 
+    =============
+        TABLET
+    =============
+*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
