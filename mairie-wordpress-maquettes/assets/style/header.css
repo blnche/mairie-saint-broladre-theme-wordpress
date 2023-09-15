@@ -5,44 +5,140 @@
 */
 
 .header {
-    background-image: url('/assets/images/cropped-anne.jpg');
+    /* background-image: url('/assets/images/cropped-anne.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    height: 15%;
+    background-position: center center; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6.5rem;
+    background-color: var(--clr-body-background);
+    box-shadow: 0 9px 38px -11px rgba(0,0,0,.25);
+    z-index: 1000;
 }
 
-.header-container .header-title {
-    color: white;
+.header-container, .header-container .header-title {
+    color: var(--clr-body-text);
     /* text-align: center; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1000;
+    background-color: var(--clr-body-background);
 }
 
 .header-container .header-title h1 {
-    font-size: large;
+    font-size: var(--fs-header-title);
+    letter-spacing: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
+.header-container .header-title p {
+    font-size: var(--fs-page-p);
+    letter-spacing: 0.1rem;
+}
+
+/* ==================== */
+/* ==== NAVIGATION ==== */
+/* ==================== */
+
 .header-container nav {
+    height: 100%;
     display: none;
+    grid-template-areas: 
+        "contact"
+        "search"
+        "menu";
+
+    position:fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    padding: 10rem 1rem;
+
+    background-color: var(--clr-body-background);
+}
+
+.header-container nav .site-links {
+    grid-area: menu;
+    background-color: var(--clr-body-text);
+    color: var(--clr-body-background);
+    border-radius: 0.5rem;
+    padding-top: 2rem;
+}
+
+.header-container nav .site-links li {
+    text-align: center;
+    margin-block: 2rem;
+    text-transform: uppercase;
+}
+
+.header-container nav .site-links .subMenuParent {
+    cursor: pointer;
+}
+
+.header-container .sub-menu {
+    display: none;
+    justify-items: center;
+}
+
+.header-container nav form {
+    grid-area: search;
+}
+
+.header-container nav .contact-links {
+    grid-area: contact;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-container nav .contact-links a {
+    position: relative;
+}
+
+.header-container .contact-link:before {
+    content: url('../images/icons8-write-24.png');
+    top: 50%;
+    position: absolute;
+    left: -3rem;
+    transform: translateY(-50%);
+}
+
+.header-container .contact-phone:before {
+    content: url('../images/icons8-téléphone-24.png');
+    top: 50%;
+    position: absolute;
+    left: -3rem;
+    transform: translateY(-50%);
+}
+
+.header-container .active {
+    display: grid;
 }
 
 .header-container .header-menu-button-container {
     position: fixed;
-    top: 0.5rem;
-    right: 0.5rem;
+    top: 0.75rem;
+    right: 0.85rem;
 
     width: 50px;
-    height: 50px;
+    height: 45px;
 
-    background-color: rgba(186, 170, 159, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--clr-buttons-background);
     border-radius: 0.5rem;
     padding: 0.3rem;
 
     cursor: pointer;
     overflow: hidden;
-}
-
-.header-container .active {
-    display: block;
+    z-index: 1000;
 }
 
 /* 

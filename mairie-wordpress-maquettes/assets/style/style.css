@@ -2,14 +2,16 @@
 @import url('/assets/style/header.css');
 @import url('/assets/style/footer.css');
 @import url('/assets/style/front-page.css');
+@import url('/assets/style/colors.css');
+@import url('/assets/style/font-sizes.css');
 
-body > :nth-child(even) {
+/* body > :nth-child(even) {
     background-color: rgb(192, 96, 96);
 }
 
 body > :nth-child(odd) {
     background-color: rgb(128, 128, 196);
-}
+} */
 
 /* 
     =============
@@ -17,14 +19,25 @@ body > :nth-child(odd) {
     =============
 */
 
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+}
+
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+
+    color: var(--clr-body-text);
+    background-color: var(--clr-body-background);
+
+    font-size: var(--fs-body);
 }
 
-.header, .main, .footer {
-    width: 100%;
+.header, .main-container, .footer {
+    max-width: 100%;
+    padding: 1rem;
 }
 
 .menu-container {
@@ -36,6 +49,17 @@ body {
     justify-content: space-between;
     align-items: center;
     /*line-height: 4rem;*/
+    background-color: var(--clr-buttons-background);
+    border-radius: 0.5rem;
+    z-index: 999;
+}
+
+.main {
+    margin-top: 6.5rem;
+}
+
+.main .main-container {
+    margin-top: 2rem;
 }
 
 /* 
