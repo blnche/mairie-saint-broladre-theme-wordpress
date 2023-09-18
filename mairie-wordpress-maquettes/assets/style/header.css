@@ -4,18 +4,23 @@
     =============
 */
 
-.header {
+body .header {
     /* background-image: url('/assets/images/cropped-anne.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; */
+
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+
     height: 6.5rem;
+    padding: 3rem 1.5rem;
+
     background-color: var(--clr-body-background);
     box-shadow: 0 9px 38px -11px rgba(0,0,0,.25);
+
     z-index: 1000;
 }
 
@@ -64,11 +69,15 @@
 }
 
 .header-container nav .site-links {
-    grid-area: menu;
+    order: 2;
+    /* grid-area: menu; */
+
     background-color: var(--clr-body-text);
     color: var(--clr-body-background);
     border-radius: 0.5rem;
-    padding-top: 2rem;
+
+    margin-top: 10rem;
+    padding-block: 2rem;
 }
 
 .header-container nav .site-links li {
@@ -87,13 +96,16 @@
 }
 
 .header-container nav form {
-    grid-area: search;
+    /* grid-area: search; */
+    margin-block: 5rem;
 }
 
 .header-container nav .contact-links {
-    grid-area: contact;
+    /* grid-area: contact; */
     display: flex;
     justify-content: space-evenly;
+
+    margin-block: 4rem;
 }
 
 .header-container nav .contact-links a {
@@ -117,13 +129,14 @@
 }
 
 .header-container .active {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 .header-container .header-menu-button-container {
     position: fixed;
-    top: 0.75rem;
-    right: 0.85rem;
+    top: 1.5rem;
+    right: 1.5rem;
 
     width: 50px;
     height: 45px;

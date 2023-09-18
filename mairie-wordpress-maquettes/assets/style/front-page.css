@@ -1,11 +1,18 @@
+body .main {
+    margin-top: 10rem;
+}
+
 .main .homepage-image-container {
     overflow: hidden;
+    
     display: flex;
     justify-content: center;
+
+    height: 18rem;
 }
 .main .homepage-image-container img {
     /* width: 100%; */
-    height: 20rem;
+    /* height: 20rem; */
     object-fit: cover;
 }
 

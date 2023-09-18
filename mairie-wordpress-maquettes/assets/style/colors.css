@@ -2,7 +2,7 @@
     color-scheme: light;
     --clr-body-background : rgb(255, 255, 255);
     --clr-body-text : rgb(0, 0, 0);
-    --clr-buttons-background : rgba(0, 0, 0, 0.2);
+    --clr-buttons-background : rgba(0, 0, 0);
     --clr-accent : rgb(0, 0, 0);
 }
 
@@ -10,6 +10,6 @@
     color-scheme: dark;
     --clr-body-background : rgb(0, 0, 0);
     --clr-body-text : rgb(255, 255, 255);
-    --clr-buttons-background : rgba(220, 211, 211, 0.8);
+    --clr-buttons-background : rgba(220, 211, 211);
     --clr-accent : rgb(0, 0, 0);
 }
