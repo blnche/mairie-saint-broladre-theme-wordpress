@@ -56,31 +56,27 @@ NAVIGATION
 
 .header-container nav {
     height: 100%;
+    padding: 10rem 1rem;
+
     display: none;
-    grid-template-areas: 
-        "contact"
-        "search"
-        "menu";
 
     position:fixed;
     top: 0;
     left:0;
     right: 0;
     bottom: 0;
-    padding: 10rem 1rem;
 
     background-color: var(--clr-body-background);
 }
 
 .header-container nav .site-links {
     order: 2;
-    /* grid-area: menu; */
 
-    background-color: var(--clr-body-text);
-    color: var(--clr-text);
+    background-color: var(--clr-text);
+    color: var(--clr-text-inversed);
     border-radius: 0.5rem;
 
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
     padding-block: 2rem;
 }
 
@@ -92,6 +88,15 @@ NAVIGATION
 
 .header-container nav .site-links .subMenuParent {
     cursor: pointer;
+    position: relative;
+}
+
+.header-container nav .site-links .subMenuParent:after {
+    content: var(--toggle-icon);
+    top: 50%;
+    position: absolute;
+    right: 15%;
+    transform: translateY(-50%);
 }
 
 .header-container .sub-menu {
@@ -99,13 +104,7 @@ NAVIGATION
     justify-items: center;
 }
 
-.header-container nav form {
-    /* grid-area: search; */
-    margin-block: 5rem;
-}
-
 .header-container nav .contact-links {
-    /* grid-area: contact; */
     display: flex;
     justify-content: space-evenly;
 
@@ -156,6 +155,42 @@ NAVIGATION
     cursor: pointer;
     /* overflow: hidden; */
     z-index: 1000;
+}
+
+.header-container nav .search-bar {
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container nav .search-bar label {
+    display: none;
+}
+
+.header-container nav .search-bar #search {
+    padding: 1rem;
+    margin-block: 1rem;
+
+    width: 80%;
+
+    box-shadow: 0 4px 24px -6px var(--clr-shadow);
+    border: 1px solid var(--clr-border);
+    border-radius: 0.5rem;
+}
+
+.header-container nav .search-bar #searchsubmit {
+    padding: 1rem 1.5rem;
+    margin-block: 1rem;
+
+    background-color: var(--clr-accent);
+    color: white;
+
+    box-shadow: 0 4px 24px -6px var(--clr-shadow);
+    border: 1px solid var(--clr-border);
+    border-radius: 0.5rem;
 }
 
 /* 

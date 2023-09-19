@@ -1,15 +1,25 @@
 export function burgerMenu () {
     let burgerMenuButton = document.getElementById('burgerMenuBtn');
     let menu = document.getElementById('mainMenu');
+    let theme = document.documentElement.getAttribute('data-theme');
 
     burgerMenuButton.addEventListener('click', function () {
         menu.classList.toggle('active');
         if (menu.getAttribute('class') === 'active') {
-            burgerMenuButton.setAttribute('src', 'https://img.icons8.com/FFFFFF/sf-regular-filled/48/multiply.png');
             burgerMenuButton.setAttribute('alt', 'multiply');
+            if (theme === 'dark') {
+                burgerMenuButton.setAttribute('src', 'https://img.icons8.com/000000/fluency-systems-filled/48/menu.png');
+            } else if (theme === 'light') {
+                burgerMenuButton.setAttribute('src', 'https://img.icons8.com/FFFFFF/sf-regular-filled/48/multiply.png');
+            }
         } else {
-            burgerMenuButton.setAttribute('src', 'https://img.icons8.com/FFFFFF/fluency-systems-filled/48/menu.png');
             burgerMenuButton.setAttribute('alt','menu');
+            if (theme === 'dark') {
+                burgerMenuButton.setAttribute('src', 'https://img.icons8.com/000000/fluency-systems-filled/48/menu.png');
+            } else if (theme === 'light') {
+                burgerMenuButton.setAttribute('src', 'https://img.icons8.com/FFFFFF/fluency-systems-filled/48/menu.png');
+                
+            }
         }
     })
 }

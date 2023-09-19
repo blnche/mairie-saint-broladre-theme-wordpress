@@ -56,10 +56,12 @@ body {
     background-color: var(--clr-buttons-background);
     border-radius: 0.5rem;
     z-index: 999;
+    padding: 0.25rem;
 }
 
 .menu-container li a {
     padding: 0.25rem;
+}
 }
 
 .main {
