@@ -2,9 +2,15 @@ body .main {
     margin-top: 10rem;
 }
 
+/* 
+=============
+BANNER IMAGE
+============= 
+*/
+
 .main .homepage-image-container {
     overflow: hidden;
-    
+
     display: flex;
     justify-content: center;
 
@@ -15,6 +21,11 @@ body .main {
     /* height: 20rem; */
     object-fit: cover;
 }
+/*
+=============
+MAIN
+=============
+*/
 
 .main-container h1 {
     font-size: var(--fs-page-title);
@@ -22,8 +33,14 @@ body .main {
     margin-bottom: 2rem;
 }
 
-.menu-homepage-container {
+/*
+=============
+HOMEPAGE MENU
+=============
+*/
 
+.menu-homepage-container {
+    padding: 1rem;
 }
 
 .mairie-menu {
@@ -45,7 +62,7 @@ body .main {
 
 
     background-color: white;
-    border: 1px solid grey;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
 
     display: flex;
@@ -83,4 +100,99 @@ body .main {
     align-items: center;
     height: 6rem;
     line-height: 1.2;
+}
+
+/*
+=============
+NEWS & AGENDA
+=============
+*/
+
+.main-container .news-container h2 {
+    font-size: var(--fs-section-title);
+    margin-block: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+/* ==== NEWS ==== */
+
+.main-container .news-container .news {
+    margin-block: 2rem;
+    padding: 4rem;
+    background-color: var(--clr-body-text);
+    color: var(--clr-body-background);
+}
+
+.main-container .news-container .news article {
+    padding-inline: 2rem;
+}
+
+.main-container .news-container .news article header {
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+
+    height: 9rem;
+
+    padding: 1rem;
+}
+
+.main-container .news-container .news article header img {
+    object-fit: cover;
+}
+
+.main-container .news-container .news article section {
+    padding: 1rem;
+    
+}
+
+.main-container .news-container .news article section h3 {
+    font-size: var(--fs-post-title);
+    margin-block: 1rem;
+    
+}
+
+.main-container .news-container .news article section p {
+    margin-block: 1rem;
+}
+
+.main-container .news-container .news article footer {
+    padding: 1rem;
+    margin-block: 1.5rem;
+
+    display: flex;
+    justify-content: end;
+    
+}
+
+.main-container .news-container .news article footer a {
+    background-color: var(--clr-body-background);
+    color: var(--clr-body-text);
+
+    border: 1.5px solid var(--clr-body-text);
+
+    padding: 2rem;
+}
+
+/* ==== AGENDA ==== */
+
+.main-container .agenda {
+    margin-block: 2rem;
+    padding: 4rem;
+}
+
+.main-container .agenda ul {
+    margin-block: 3rem;
+}
+
+.main-container .agenda ul li {
+    margin-block: 2rem;
+    padding: 2rem;
+
+    border : 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 24px -6px rgba(0, 0, 0, 0.25);
 }

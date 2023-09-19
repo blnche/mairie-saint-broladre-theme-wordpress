@@ -1,0 +1,5 @@
+body .footer {
+    background-color: var(--clr-body-text);
+    color: var(--clr-body-background);
+    padding: 3rem 1rem;
+}

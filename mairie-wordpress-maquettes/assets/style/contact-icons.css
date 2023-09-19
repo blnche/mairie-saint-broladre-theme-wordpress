@@ -4,6 +4,6 @@
 }
 
 :root[data-theme="dark"] {
-    --phone-icon: url('../images/icons8-write-24-2.png');
-    --contact-icon: url('../images/icons8-téléphone-24-2.png');
+    --phone-icon: url('../images/icons8-téléphone-24-2.png');
+    --contact-icon: url('../images/icons8-write-24-2.png');
 }

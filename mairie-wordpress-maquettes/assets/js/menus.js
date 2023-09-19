@@ -15,10 +15,14 @@ export function burgerMenu () {
 }
 
 export function foldingMenu () {
-    let menu = document.getElementById('subMenu');
-    let foldingMenuParent = menu.parentNode;
-    
-    foldingMenuParent.addEventListener('click', function () {
-        menu.classList.toggle('active');
-    })
+    let menu = document.querySelectorAll('.sub-menu');
+
+    for (let i = 0; i < menu.length; i++) {
+        let foldingMenuParent = menu[i].parentNode;
+        
+        foldingMenuParent.addEventListener('click', function () {
+            menu[i].classList.toggle('active');
+        })
+    }
+
 }
