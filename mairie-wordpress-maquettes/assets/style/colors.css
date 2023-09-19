@@ -1,9 +1,15 @@
 :root[data-theme="light"] {
     color-scheme: light;
+
     --clr-body-background : rgb(255, 255, 255);
-    --clr-body-text : rgb(0, 0, 0);
+    --clr-text : rgb(0, 0, 0);
+    --clr-text-inversed : rgb(255, 255, 255);
+    --clr-primary : #0e0ec4;
+    --clr-secondary : #dec1fb;
+    --clr-accent : #7841af;
+    
     --clr-buttons-background : rgba(0, 0, 0);
-    --clr-accent : red;
+
     --clr-shadow : rgba(0, 0, 0, 0.25);
     --clr-shadow-inversed : rgba(255, 255, 255, 0.25);
     --clr-border : rgba(0, 0, 0, 0.2);
@@ -12,10 +18,15 @@
 
 :root[data-theme="dark"] {
     color-scheme: dark;
+
     --clr-body-background : rgb(0, 0, 0);
     --clr-body-text : rgb(255, 255, 255);
+    --clr-primary : #0e0ec4;
+    --clr-secondary : #120222;
+    --clr-accent : #c5aadf;
+    
     --clr-buttons-background : rgba(220, 211, 211);
-    --clr-accent : red;
+
     --clr-shadow : rgba(255, 255, 255, 0.25);
     --clr-shadow-inversed : rgba(0, 0, 0, 0.25);
     --clr-border : rgba(255, 255, 255, 0.2);

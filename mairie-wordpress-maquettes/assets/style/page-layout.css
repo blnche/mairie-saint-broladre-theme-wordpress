@@ -1,0 +1,40 @@
+.main-container h1 {
+    margin-block: 5rem 3rem;
+}
+
+.main-container h1:after {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 0.35rem;
+    background-color: var(--clr-accent);
+    margin: 1.5rem auto;
+}
+
+.main-container .sub-pages-list {
+    margin-bottom: 3.5rem;
+}
+
+.main-container .sub-pages-list nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container .sub-pages-list nav a {
+    height: 10rem;
+    width: 15rem;
+
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    box-shadow: 0 4px 24px -6px var(--clr-shadow);
+    border: 1px solid var(--clr-border);
+    border-radius: 0.5rem;
+}

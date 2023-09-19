@@ -5,6 +5,9 @@
 @import url('/assets/style/colors.css');
 @import url('/assets/style/font-sizes.css');
 @import url('/assets/style/contact-icons.css');
+@import url('/assets/style/page-layout.css');
+@import url('/assets/style/single-post.css');
+@import url('/assets/style/projects-layout.css');
 
 /* body > :nth-child(even) {
     background-color: rgb(192, 96, 96);

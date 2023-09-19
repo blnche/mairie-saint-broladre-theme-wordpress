@@ -1,0 +1,27 @@
+.main-container article {
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container article img {
+    width: 96px;
+    height: 96px;
+}
+
+
+/* 
+    ==================
+        SMALLER MOBILE
+    ==================
+*/ 
+
+@media (max-width: 350px) {
+    .main-container article {
+        padding: 3rem;
+    }
+}
