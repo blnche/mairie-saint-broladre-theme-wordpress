@@ -3,3 +3,36 @@ body .footer {
     color: var(--clr-body-background);
     padding: 3rem 1rem;
 }
+
+body .footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-block: 2rem;
+}
+
+.footer .menu-menu-de-bas-de-page-container {
+    padding: 1.5rem;
+}
+
+.footer .menu-menu-de-bas-de-page-container ul li {
+    padding-block: 1.25rem;
+    text-align: center;
+}
+
+.footer .menu-menu-de-bas-de-page-container ul li a {
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+.footer p {
+    margin-block: 6rem 2rem;
+    text-align: center;
+}
+
+.footer p a {
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}

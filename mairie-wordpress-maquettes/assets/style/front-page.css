@@ -62,7 +62,8 @@ HOMEPAGE MENU
 
 
     background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 24px -6px var(--clr-shadow);
+    border: 1px solid var(--clr-border);
     border-radius: 0.5rem;
 
     display: flex;
@@ -93,6 +94,7 @@ HOMEPAGE MENU
 }
 
 .menu-homepage-container .mairie-menu a .label {
+    color: black;
     text-transform: uppercase;
     text-align: center;
     display: flex;
@@ -114,6 +116,15 @@ NEWS & AGENDA
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
+}
+
+.main-container .news-container h2:after {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 0.35rem;
+    background-color: var(--clr-accent);
+    margin: 3rem auto;
 }
 
 /* ==== NEWS ==== */
@@ -174,14 +185,23 @@ NEWS & AGENDA
 
     border: 1.5px solid var(--clr-body-text);
 
-    padding: 2rem;
+    padding: 1.5rem 2rem;
+}
+
+.main-container .news-container .news article footer a:after {
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--clr-accent);
+    margin: 0.8rem auto;
 }
 
 /* ==== AGENDA ==== */
 
 .main-container .agenda {
     margin-block: 2rem;
-    padding: 4rem;
+    padding: 4rem 4rem 2rem;
 }
 
 .main-container .agenda ul {
@@ -192,7 +212,7 @@ NEWS & AGENDA
     margin-block: 2rem;
     padding: 2rem;
 
-    border : 1px solid rgba(0, 0, 0, 0.2);
+    border : 1px solid var(--clr-border);
     border-radius: 0.5rem;
-    box-shadow: 0 4px 24px -6px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 24px -6px var(--clr-shadow);
 }

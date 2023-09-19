@@ -21,6 +21,8 @@ body .header {
     background-color: var(--clr-body-background);
     box-shadow: 0 9px 38px -11px var(--clr-shadow);
 
+    border-radius: 0.5rem;
+
     z-index: 1000;
 }
 
