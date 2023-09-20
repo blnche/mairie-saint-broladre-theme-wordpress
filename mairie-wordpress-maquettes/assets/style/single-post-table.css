@@ -1,0 +1,71 @@
+.main-container article img {
+    width: 50%;
+    height: auto;
+    margin-block: 2rem;
+}
+
+.main-container .professionnels-santé, .main-container .professionnels-locaux {
+    margin-inline: auto;
+    width: 70%;
+}
+
+.main-container .professionnels-santé h2, .main-container .professionnels-locaux h2 {
+    font-size: var(--fs-section-title);
+    margin-block: 2.5rem;
+}
+
+.main-container .professionnels-santé article, .main-container .professionnels-locaux article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-block: 1rem;
+}
+
+.main-container .professionnels-santé article:before, .main-container .professionnels-locaux article:before {
+    content: "";
+    display: block;
+    width: 20rem;
+    height: 0.2rem;
+    background-color: var(--clr-secondary);
+    margin: 1.5rem auto 3rem;
+}
+
+.main-container .professionnels-santé article:after, .main-container .professionnels-locaux article:after {
+    content: "";
+    display: block;
+    width: 20rem;
+    height: 0.2rem;
+    background-color: var(--clr-secondary);
+    margin: 3rem auto 1.5rem;
+}
+
+.main-container .professionnels-santé article h3, .main-container .professionnels-locaux article h3 {
+    text-transform: uppercase;
+}
+
+.main-container .professionnels-santé article address, .main-container .professionnels-locaux article address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-container .professionnels-santé article address > *, .main-container .professionnels-locaux article address > * {
+    margin-block: 1rem;
+}
+
+.main-container .professionnels-santé article address a, .main-container .professionnels-locaux article address a {
+    position: relative;
+}
+
+.main-container .professionnels-santé article address a:after, .main-container .professionnels-locaux article address a:after {
+    content: "";
+    display: block;
+    width: 7.5rem;
+    height: 0.3rem;
+    background-color: var(--clr-accent);
+    margin: 0.5rem auto;
+
+    position: absolute;
+}

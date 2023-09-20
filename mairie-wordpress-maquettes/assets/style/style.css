@@ -8,6 +8,7 @@
 @import url('/assets/style/page-layout.css');
 @import url('/assets/style/single-post.css');
 @import url('/assets/style/projects-layout.css');
+@import url('/assets/style/single-post-table.css');
 
 /* 
     =============
@@ -57,6 +58,10 @@ body {
 
 .menu-container li a {
     padding: 0.25rem;
+}
+
+.main {
+    margin-top: 6.5rem;
 }
 
 .main .main-container {

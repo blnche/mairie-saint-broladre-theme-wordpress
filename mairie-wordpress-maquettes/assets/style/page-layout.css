@@ -1,3 +1,7 @@
+body .main {
+    margin-top: 10rem;
+}
+
 .main-container h1 {
     margin-block: 5rem 3rem;
 }
