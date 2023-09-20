@@ -1,14 +1,12 @@
-body .main {
-    margin-top: 10rem;
-}
-
 /* 
 =============
 BANNER IMAGE
 ============= 
 */
 
-.main .homepage-image-container {
+.homepage-image-container {
+    margin-top: 10rem;
+
     overflow: hidden;
 
     display: flex;
@@ -16,11 +14,12 @@ BANNER IMAGE
 
     height: 18rem;
 }
-.main .homepage-image-container img {
+.homepage-image-container img {
     /* width: 100%; */
     /* height: 20rem; */
     object-fit: cover;
 }
+
 /*
 =============
 MAIN
@@ -218,4 +217,16 @@ NEWS & AGENDA
     border : 1px solid var(--clr-border);
     border-radius: 0.5rem;
     box-shadow: 0 4px 24px -6px var(--clr-shadow);
+}
+
+/* 
+    =============
+        TABLET
+    =============
+*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .homepage-image-container {
+        height: 30rem;
+    }
 }
