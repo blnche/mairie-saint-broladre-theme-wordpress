@@ -15,8 +15,8 @@ body .header {
     left: 0;
     right: 0;
 
-    height: 6.5rem;
-    padding: 3rem 1.5rem;
+    height: 12rem;
+    /* padding: 3rem 1.5rem; */
 
     background-color: var(--clr-background);
     box-shadow: 0 9px 38px -11px var(--clr-card-shadow);
@@ -30,6 +30,8 @@ body .header {
     /* color: hsl(216, 71.0%, 23.0%); */
     /* text-align: center; */
     height: 100%;
+    padding: 1rem;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
