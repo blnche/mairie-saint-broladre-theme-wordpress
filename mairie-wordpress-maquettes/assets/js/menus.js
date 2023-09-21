@@ -1,10 +1,11 @@
 export function burgerMenu () {
     let burgerMenuButton = document.getElementById('burgerMenuBtn');
     let menu = document.getElementById('mainMenu');
-    let theme = document.documentElement.getAttribute('data-theme');
-
+    
     burgerMenuButton.addEventListener('click', function () {
+        let theme = document.documentElement.getAttribute('data-theme');
         menu.classList.toggle('active');
+        
         if (menu.getAttribute('class') === 'active') {
             burgerMenuButton.setAttribute('alt', 'multiply');
             if (theme === 'dark') {
