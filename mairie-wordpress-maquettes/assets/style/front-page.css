@@ -74,6 +74,17 @@ HOMEPAGE MENU
     position: relative;
 }
 
+.menu-homepage-container .mairie-menu a:hover {
+    background-color: var(--clr-card-background-hover);
+    border: 1px solid var(--clr-card-border-active);
+}
+
+.menu-homepage-container .mairie-menu a:active {
+    background-color: var(--clr-card-background-active);
+    border: 1px solid var(--clr-card-border-active);
+
+}
+
 .menu-homepage-container .mairie-menu a:before {
     content: url("../images/icons8-wave-48-4.png");
 
@@ -195,7 +206,7 @@ NEWS & AGENDA
     background-color: var(--clr-button-background);
 
     border: 1.5px solid var(--clr-button-border);
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
 
     box-shadow: 0 4px 24px -6px var(--clr-button-shadow );
 }
@@ -207,6 +218,16 @@ NEWS & AGENDA
     height: 0.3rem;
     background-color: var(--clr-accent);
     margin: 0.8rem auto;
+}
+
+.main-container .news-container .news article footer a:hover {
+    background-color: var(--clr-button-background-hover);
+    border: 1.5px solid var(--clr-button-border-active);
+}
+
+.main-container .news-container .news article footer a:active {
+    background-color: var(--clr-button-background-active);
+    border: 1.5px solid var(--clr-button-border-active);
 }
 
 /* ==== AGENDA ==== */

@@ -20,7 +20,18 @@ body .footer nav {
 
 .footer .menu-menu-de-bas-de-page-container ul li {
     padding-block: 1.25rem;
+    padding-inline: 0.5rem;
     text-align: center;
+
+    border-radius: 0.5rem;
+}
+
+.footer .menu-menu-de-bas-de-page-container ul li:hover {
+    background-color: var(--clr-element-background-hover);
+}
+
+.footer .menu-menu-de-bas-de-page-container ul li:active {
+    background-color: var(--clr-element-background-active);
 }
 
 .footer .menu-menu-de-bas-de-page-container ul li a {
