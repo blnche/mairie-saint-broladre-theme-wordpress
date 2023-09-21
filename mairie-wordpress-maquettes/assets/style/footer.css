@@ -1,6 +1,6 @@
 body .footer {
-    padding: 3rem 1rem;
-    
+    /* padding: 3rem 1rem; */
+
     background-color: var(--clr-element-background);
     border-top: 1px solid var(--clr-element-border);
 }
@@ -30,6 +30,7 @@ body .footer nav {
 
 .footer p {
     margin-block: 6rem 3rem;
+    padding: 1.5rem;
     text-align: center;
 }
 

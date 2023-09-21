@@ -1,5 +1,6 @@
 .main-container article {
     margin-bottom: 2rem;
+    padding-inline: 1rem;
 
     display: flex;
     flex-direction: column;

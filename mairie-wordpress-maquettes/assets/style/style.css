@@ -9,8 +9,8 @@
 @import url('/assets/style/single-post.css');
 @import url('/assets/style/projects-layout.css');
 @import url('/assets/style/single-post-table.css');
-
-/* * {
+/* 
+body {
     border: 1px solid red !important;
 } */
 
@@ -23,10 +23,14 @@
 html {
     font-size: 62.5%;
     line-height: 1.5;
+
+    box-sizing: border-box;
 }
 
 body {
     height: 100%;
+    width: 100%;
+    
     display: flex;
     flex-direction: column;
 
