@@ -1,7 +1,8 @@
 body .footer {
-    background-color: var(--clr-primary);
-    color: white;
     padding: 3rem 1rem;
+    
+    background-color: var(--clr-element-background);
+    border-top: 1px solid var(--clr-element-border);
 }
 
 body .footer nav {

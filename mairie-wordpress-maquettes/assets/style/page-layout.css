@@ -1,9 +1,9 @@
-body .main {
-    margin-top: 10rem;
+body .main-container {
+    padding: 1rem;
 }
 
 .main-container h1 {
-    margin-block: 5rem 3rem;
+    margin-block: 3.5rem 3rem;
 }
 
 .main-container h1:after {
@@ -38,7 +38,7 @@ body .main {
     justify-content: center;
 
     background-color: white;
-    box-shadow: 0 4px 24px -6px var(--clr-shadow);
-    border: 1px solid var(--clr-border);
+    box-shadow: 0 4px 24px -6px var(--clr-card-shadow);
+    border: 1px solid var(--clr-card-border);
     border-radius: 0.5rem;
 }

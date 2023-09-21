@@ -26,8 +26,8 @@ body {
     display: flex;
     flex-direction: column;
 
-    color: var(--clr-body-text);
-    background-color: var(--clr-body-background);
+    color: var(--clr-text-high-contrast);
+    background-color: var(--clr-subtle-background);
 
     font-size: var(--fs-body);
 }
@@ -50,7 +50,7 @@ body {
     justify-content: space-between;
     align-items: center;
     /*line-height: 4rem;*/
-    background-color: var(--clr-buttons-background);
+    background-color: var(--clr-menu-background);
     border-radius: 0.5rem;
     z-index: 999;
     padding: 0.25rem;
@@ -61,11 +61,7 @@ body {
 }
 
 .main {
-    margin-top: 6.5rem;
-}
-
-.main .main-container {
-    margin-top: 2rem;
+    margin-top: 12rem;
 }
 
 /* 

@@ -5,7 +5,7 @@ BANNER IMAGE
 */
 
 .homepage-image-container {
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
 
     overflow: hidden;
 
@@ -13,6 +13,7 @@ BANNER IMAGE
     justify-content: center;
 
     height: 18rem;
+    width: 100%;
 }
 .homepage-image-container img {
     /* width: 100%; */
@@ -52,6 +53,7 @@ HOMEPAGE MENU
 .menu-homepage-container .mairie-menu a {
     width: 10rem;
     height: 11rem;
+
     margin-bottom: 4.5rem;
     padding-bottom: 4rem;
     padding-left: 3rem;
@@ -59,9 +61,10 @@ HOMEPAGE MENU
     padding-top: 1rem;
 
 
-    background-color: white;
-    box-shadow: 0 4px 24px -6px var(--clr-shadow);
-    border: 1px solid var(--clr-border);
+    background-color: var(--clr-card-background);
+    box-shadow: 0 4px 24px -6px var(--clr-card-shadow);
+
+    border: 1px solid var(--clr-card-border);
     border-radius: 0.5rem;
 
     display: flex;
@@ -72,13 +75,15 @@ HOMEPAGE MENU
 }
 
 .menu-homepage-container .mairie-menu a:before {
-    content: url("../images/icons8-wave-48.png");
+    content: url("../images/icons8-wave-48-4.png");
+
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: -13%;
+    
     padding: 0.5rem;
-    background-color: var(--background-lighter);
+    /* background-color: var(--background-lighter); */
     /*background: var(--accent);*/
     /*height: 3px;*/
     /*width: 50px;*/
@@ -97,7 +102,8 @@ HOMEPAGE MENU
 }
 
 .menu-homepage-container .mairie-menu a .label {
-    color: black;
+    /* color: black; */
+    /* color : hsl(216, 71.0%, 23.0%); */
     text-transform: uppercase;
     text-align: center;
     display: flex;
@@ -135,8 +141,10 @@ NEWS & AGENDA
 .main-container .news-container .news {
     margin-block: 2rem;
     padding: 4rem;
-    background-color: var(--clr-primary);
-    color: white;
+    background-color: var(--clr-element-background);
+    border-top: 1px solid var(--clr-element-border);
+    border-bottom: 1px solid var(--clr-element-border);
+    /* color: white; */
 }
 
 .main-container .news-container .news article {
@@ -182,12 +190,14 @@ NEWS & AGENDA
 }
 
 .main-container .news-container .news article footer a {
-    background-color: var(--clr-secondary);
-    color: var(--clr-text);
-
-    border: 1.5px solid var(--clr-body-text);
-
     padding: 1.5rem 2rem;
+    
+    background-color: var(--clr-button-background);
+
+    border: 1.5px solid var(--clr-button-border);
+    border-radius: 0.3rem;
+
+    box-shadow: 0 4px 24px -6px var(--clr-button-shadow );
 }
 
 .main-container .news-container .news article footer a:after {
@@ -204,6 +214,8 @@ NEWS & AGENDA
 .main-container .agenda {
     margin-block: 2rem;
     padding: 4rem 4rem 2rem;
+
+    /* color: hsl(216, 71.0%, 23.0%); */
 }
 
 .main-container .agenda ul {
@@ -214,9 +226,10 @@ NEWS & AGENDA
     margin-block: 2rem;
     padding: 2rem;
 
-    border : 1px solid var(--clr-border);
+    background-color: var(--clr-card-background);
+    border : 1px solid var(--clr-card-border);
     border-radius: 0.5rem;
-    box-shadow: 0 4px 24px -6px var(--clr-shadow);
+    box-shadow: 0 4px 24px -6px var(--clr-card-shadow);
 }
 
 /* 
