@@ -263,4 +263,47 @@ NEWS & AGENDA
     .homepage-image-container {
         height: 30rem;
     }
+    .main-container .menu-homepage-container .mairie-menu {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* 
+    =============
+        DESKTOP
+    =============
+*/
+
+@media (min-width: 1024px) {
+    /* .homepage-image-container {
+        height: 30rem;
+    } */
+    .main-container .menu-homepage-container .mairie-menu {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    /*
+    =============
+    NEWS & AGENDA
+    =============
+    */
+
+    .main-container .news-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    /* ==== NEWS ==== */
+
+    .main-container .news-container .news {
+        /* margin-block: 2rem;
+        padding: 4rem; */
+        /* background-color: var(--clr-element-background); */
+        border: 1px solid var(--clr-element-border);
+        border-radius: 0.5rem;
+        /* border-bottom: 1px solid var(--clr-element-border); */
+        /* color: white; */
+    }
+    
 }

@@ -60,7 +60,7 @@ body {
     /* flex-direction: column; */
     /* justify-content: space-between; */
     /* align-items: center; */
-    
+
     background-color: var(--clr-menu-background);
 
     /*line-height: 4rem;*/
@@ -93,6 +93,17 @@ body {
     margin-top: 12rem;
 }
 
+
+/* 
+=============
+TABLET
+=============
+*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+}
+
 /* 
     =============
         DESKTOP
@@ -117,14 +128,7 @@ body {
         align-items: center;
         /*line-height: 4rem;*/
     }
-}
-
-/* 
-    =============
-        TABLET
-    =============
-*/
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
+    .main {
+        margin-top: 0;
+    }
 }

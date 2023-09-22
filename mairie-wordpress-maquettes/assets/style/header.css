@@ -90,6 +90,8 @@ NAVIGATION
     margin-block: 1rem;
     padding: 1rem 1.5rem;
 
+    border-radius: 0.5rem;
+
     text-align: center;
     text-transform: uppercase;
 }
@@ -229,29 +231,9 @@ NAVIGATION
 }
 
 /* 
-    =============
-        DESKTOP
-    =============
-*/
-
-@media (min-width: 1024px) {
-
-}
-
-/* 
-    =============
-        TABLET
-    =============
-*/
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-}
-
-/* 
-    ==================
-        SMALLER MOBILE
-    ==================
+==================
+SMALLER MOBILE
+==================
 */ 
 
 @media (max-width: 350px) {
@@ -260,5 +242,99 @@ NAVIGATION
     }
     .header-container .header-title p {
         font-size: 1.35rem;
+    }
+}
+
+/* 
+=============
+TABLET
+=============
+*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+}
+
+/* 
+    =============
+        DESKTOP
+    =============
+*/
+
+@media (min-width: 1024px) {
+    body .header {
+        position: relative;
+        height: auto;
+    
+        /* height: 12rem; */
+        /* padding: 3rem 1.5rem; */
+    
+        /* background-color: var(--clr-background); */
+        /* background-color: transparent; */
+        /* box-shadow: 0 9px 38px -11px var(--clr-card-shadow); */
+    
+        /* border-radius: 0.5rem; */
+    
+        /* z-index: 1000; */
+    }
+    .header-container {
+        padding-bottom: 0;
+    }
+
+    .header-container .header-menu-button-container {
+        display: none;
+    }
+
+    .header-container nav {
+        height: 100%;
+        
+        padding: 0;
+        
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        position: relative;
+        
+        background-color: transparent;
+    }
+
+    .header-container nav .site-links {
+        order: 2;
+        background-color: transparent;
+        display: flex;
+        padding: 1rem;
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    .header-container nav .contact-links {
+        /* display: grid;
+        grid-template-columns: 1fr; */
+        /* justify-content: space-evenly; */
+        order: 0;
+        margin: 1rem;
+        
+    }
+
+    .header-container nav .contact-links li {
+        margin: 1rem 2rem;
+    }
+
+    .header-container nav .search-bar {
+        order: 1;
+        flex-direction: row;
+
+        margin: 1rem;
+        padding: 0;
+
+        width: 40%;
+    }
+
+    .header-container nav .search-bar #search {
+        margin-inline: 1rem;
+        min-width: 50%;
     }
 }
