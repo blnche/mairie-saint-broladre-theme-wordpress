@@ -126,6 +126,14 @@ NAVIGATION
     justify-items: center;
 }
 
+.header-container .sub-menu li a {
+    padding: 1rem 1.5rem;
+}
+
+.header-container .sub-menu li a:hover {
+    background-color: var(--clr-card-background-active);
+}
+
 .header-container nav .contact-links {
     display: flex;
     justify-content: space-evenly;
@@ -216,6 +224,8 @@ NAVIGATION
     box-shadow: 0 4px 24px -6px var(--clr-button-shadow);
     border: 1px solid var(--clr-button-border);
     border-radius: 0.5rem;
+
+    color: var(--clr-text-high-contrast);
 
     cursor: pointer;
 }

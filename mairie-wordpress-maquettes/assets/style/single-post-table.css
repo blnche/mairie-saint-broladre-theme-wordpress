@@ -70,6 +70,15 @@
     position: absolute;
 }
 
+.main-container .professionnels-santé article img {
+    width: auto;
+    height: 7rem;
+
+    align-self: flex-end;
+
+    background-color: var(--clr-background);
+}
+
 /* 
     =============
         DESKTOP
