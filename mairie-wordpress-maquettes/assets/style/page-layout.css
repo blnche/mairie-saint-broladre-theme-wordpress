@@ -42,3 +42,15 @@ body .main-container {
     border: 1px solid var(--clr-card-border);
     border-radius: 0.5rem;
 }
+
+/* 
+    =============
+        DESKTOP
+    =============
+*/
+
+@media (min-width: 1024px) and (max-width: 1510px) {
+    body .main-container {
+        min-height: 50vh;
+    }
+}

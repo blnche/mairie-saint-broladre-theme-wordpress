@@ -281,6 +281,10 @@ TABLET
         padding-bottom: 0;
     }
 
+    .header-container .header-title {
+        align-items: center;
+    }
+
     .header-container .header-menu-button-container {
         display: none;
     }
