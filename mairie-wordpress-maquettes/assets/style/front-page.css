@@ -266,6 +266,12 @@ NEWS & AGENDA
     .main-container .menu-homepage-container .mairie-menu {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    /* ==== NEWS ==== */
+
+    .main-container .news-container .news {
+        border: 1px solid var(--clr-element-border);
+        border-radius: 0.5rem;
+    }
 }
 
 /* 
@@ -297,13 +303,8 @@ NEWS & AGENDA
     /* ==== NEWS ==== */
 
     .main-container .news-container .news {
-        /* margin-block: 2rem;
-        padding: 4rem; */
-        /* background-color: var(--clr-element-background); */
         border: 1px solid var(--clr-element-border);
         border-radius: 0.5rem;
-        /* border-bottom: 1px solid var(--clr-element-border); */
-        /* color: white; */
     }
     
 }
