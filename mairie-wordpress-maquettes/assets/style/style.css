@@ -114,14 +114,13 @@ TABLET
     =============
 */
 
-@media (min-width: 1024px) and (max-width: 1100px) {
+@media (min-width: 1024px) and (max-width: 1510px) {
     body {
         /* align-items: center; */
         /* justify-content: center; */
     }
     .container {
-        min-width: 80%;
-        max-width: 90%;
+        width: 80%;
     }
     .menu-container {
         position: fixed;
@@ -137,8 +136,24 @@ TABLET
     }
 }
 
-@media (min-width: 1101px) {
+/* 
+    =============
+    LARGER DESKTOP
+    =============
+*/
+
+@media (min-width: 1511px) {
+    body {
+        background-color: var(--clr-subtle-background);
+    }
     .container {
-        min-width: 70%;
+        width: 60%;
+    }
+    .main-container {
+        background-color: redvar(--clr-background);
+
+    }
+    .main {
+        margin-top: 0;
     }
 }

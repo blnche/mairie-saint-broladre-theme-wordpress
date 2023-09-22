@@ -6,14 +6,17 @@ BANNER IMAGE
 
 .homepage-image-container {
     /* margin-top: 10rem; */
-
+    
     overflow: hidden;
-
+    
     display: flex;
     justify-content: center;
-
+    
     height: 18rem;
     width: 100%;
+
+    background-color: var(--clr-background);
+
 }
 .homepage-image-container img {
     /* width: 100%; */
@@ -26,6 +29,10 @@ BANNER IMAGE
 MAIN
 =============
 */
+
+.main-container {
+    background-color: var(--clr-background);
+}
 
 .main-container h1 {
     font-size: var(--fs-page-title);
@@ -263,10 +270,17 @@ NEWS & AGENDA
     .homepage-image-container {
         height: 30rem;
     }
+    .main-container {
+        padding-inline: 2rem;
+    }
     .main-container .menu-homepage-container .mairie-menu {
         grid-template-columns: 1fr 1fr 1fr;
     }
     /* ==== NEWS ==== */
+
+    .main-container .news-container {
+        margin-bottom: 4rem;
+    }
 
     .main-container .news-container .news {
         border: 1px solid var(--clr-element-border);
@@ -280,10 +294,59 @@ NEWS & AGENDA
     =============
 */
 
-@media (min-width: 1024px) {
-    /* .homepage-image-container {
+@media (min-width: 1024px) and (max-width: 1510px) {
+    .homepage-image-container {
         height: 30rem;
-    } */
+    }
+    .main-container {
+        padding-inline: 2rem;
+    }
+    .main-container .menu-homepage-container {
+        margin-inline: 15rem;
+    }
+    .main-container .menu-homepage-container .mairie-menu {
+        grid-template-columns: 1fr 1fr 1fr;
+        /* padding-inline: 8rem; */
+    }
+
+
+    /*
+    =============
+    NEWS & AGENDA
+    =============
+    */
+
+    .main-container .news-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-bottom: 4rem;
+    }
+
+    /* ==== NEWS ==== */
+
+    .main-container .news-container .news {
+        border: 1px solid var(--clr-element-border);
+        border-radius: 0.5rem;
+    }
+    
+}
+
+/* 
+    =============
+    LARGER DESKTOP
+    =============
+*/
+
+@media (min-width: 1511px) {
+    .homepage-image-container {
+        height: 30rem;
+    }
+    .main-container {
+        padding-inline: 2rem;
+    }
+    .main-container .menu-homepage-container {
+        margin-inline: 15rem;
+    }
     .main-container .menu-homepage-container .mairie-menu {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -298,6 +361,7 @@ NEWS & AGENDA
     .main-container .news-container {
         display: grid;
         grid-template-columns: 2fr 1fr;
+        margin-bottom: 4rem;
     }
 
     /* ==== NEWS ==== */
@@ -306,5 +370,4 @@ NEWS & AGENDA
         border: 1px solid var(--clr-element-border);
         border-radius: 0.5rem;
     }
-    
 }
