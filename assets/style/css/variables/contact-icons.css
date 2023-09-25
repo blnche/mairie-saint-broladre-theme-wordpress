@@ -1,0 +1,11 @@
+:root[data-theme="light"] {
+    --phone-icon: url('../../../images/contact-icons/icons8-telephone-24.png');
+    --contact-icon: url('../../../images/contact-icons/icons8-write-24.png');
+    --toggle-icon: url('../../../images/contact-icons/icons8-chevron-carre-bas-24-2.png');
+}
+
+:root[data-theme="dark"] {
+    --phone-icon: url('../../../images/contact-icons/icons8-telephone-24-2.png');
+    --contact-icon: url('../../../images/contact-icons/icons8-write-24-2.png');
+    --toggle-icon: url('../../../images/contact-icons/icons8-chevron-carre-bas-24-2.png');
+}
