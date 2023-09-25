@@ -1,0 +1,363 @@
+/* ============
+    BANNER IMAGE
+   ============ */
+
+.homepage-image-container {
+    height: 18rem;
+    width: 100%;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--clr-background);
+}
+
+.homepage-image-container img {
+    object-fit: cover;
+}
+
+/* ============
+    HOMEPAGE MENU
+   ============ */
+
+.menu-homepage-container {
+    padding: 1rem;
+}
+
+.mairie-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    justify-items: center;
+}
+
+.menu-homepage-container .mairie-menu a {
+    width: 10rem;
+    height: 11rem;
+
+    margin-bottom: 4.5rem;
+    padding-bottom: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+
+    background-color: var(--clr-card-background);
+    box-shadow: 0 4px 24px -6px var(--clr-card-shadow);
+
+    border: 1px solid var(--clr-card-border);
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+.menu-homepage-container .mairie-menu a:hover {
+    background-color: var(--clr-card-background-hover);
+
+    border: 1px solid var(--clr-card-border-active);
+}
+
+.menu-homepage-container .mairie-menu a:active {
+    background-color: var(--clr-card-background-active);
+
+    border: 1px solid var(--clr-card-border-active);
+}
+
+.menu-homepage-container .mairie-menu a:before {
+    padding: 0.5rem;
+
+    content: url("../../images/homepage-icon/icons8-wave-48-4.png");
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -13%;
+}
+
+.menu-homepage-container .mairie-menu a .svg-container {
+    width: 48px;
+    height: 48px;
+}
+
+.menu-homepage-container .mairie-menu a .svg-container img {
+    width: 48px;
+    height: 48px;
+}
+
+.menu-homepage-container .mairie-menu a .label {
+    height: 6rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* ============
+    NEWS & AGENDA
+   ============ */
+
+.main-container .news-container h2 {
+    margin-block: 2rem;
+
+    font-size: var(--fs-section-title);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.main-container .news-container h2:after {
+    width: 10rem;
+    height: 0.35rem;
+
+    margin: 3rem auto;
+
+    content: "";
+
+    display: block;
+
+    background-color: var(--clr-accent);
+}
+
+/* ==== NEWS ==== */
+
+.main-container .news-container .news {
+    margin-block: 2rem;
+    padding: 4rem;
+
+    background-color: var(--clr-element-background);
+
+    border-top: 1px solid var(--clr-element-border);
+    border-bottom: 1px solid var(--clr-element-border);
+}
+
+.main-container .news-container .news article {
+    padding-inline: 2rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container .news-container .news article header {
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+
+    height: 9rem;
+
+    padding: 1rem;
+}
+
+.main-container .news-container .news article header img {
+    object-fit: cover;
+}
+
+.main-container .news-container .news article section {
+    padding: 1rem;
+    
+}
+
+.main-container .news-container .news article section h3 {
+    font-size: var(--fs-post-title);
+    margin-block: 1rem;
+    
+}
+
+.main-container .news-container .news article section p {
+    margin-block: 1rem;
+}
+
+.main-container .news-container .news article footer {
+    padding: 1rem;
+    margin-block: 1.5rem;
+
+    align-self: flex-end;
+    display: flex;
+}
+
+.main-container .news-container .news article footer a {
+    padding: 1.5rem 2rem;
+    
+    background-color: var(--clr-button-background);
+
+    border: 1.5px solid var(--clr-button-border);
+    border-radius: 0.5rem;
+
+    box-shadow: 0 4px 24px -6px var(--clr-button-shadow );
+}
+
+.main-container .news-container .news article footer a:after {
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--clr-accent);
+    margin: 0.8rem auto;
+}
+
+.main-container .news-container .news article footer a:hover {
+    background-color: var(--clr-button-background-hover);
+    border: 1.5px solid var(--clr-button-border-active);
+}
+
+.main-container .news-container .news article footer a:active {
+    background-color: var(--clr-button-background-active);
+    border: 1.5px solid var(--clr-button-border-active);
+}
+
+/* ==== AGENDA ==== */
+
+.main-container .agenda {
+    margin-block: 2rem;
+    padding: 4rem 4rem 2rem;
+
+    /* color: hsl(216, 71.0%, 23.0%); */
+}
+
+.main-container .agenda ul {
+    margin-block: 3rem;
+}
+
+.main-container .agenda ul li {
+    margin-block: 2rem;
+    padding: 2rem;
+
+    background-color: var(--clr-card-background);
+    border : 1px solid var(--clr-card-border);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 24px -6px var(--clr-card-shadow);
+}
+
+#event-listing-view > div > div > div > a > div.wpem-event-infomation > div.wpem-event-details > div.wpem-event-location, #event-listing-view > div > div > div > a > div.wpem-event-infomation > div.wpem-event-date, #event-listing-view > div > div > div > a > div.wpem-event-banner, body > main > section > section.main-container > section.news-container > section.agenda > div > div.wpem-main.wpem-event-listings-header {
+    display: none;
+}
+
+#event-listing-view > div > div > div > a > div.wpem-event-infomation > div.wpem-event-details {
+    padding: 0;
+}
+
+
+
+/* 
+    =============
+        TABLET
+    =============
+*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .homepage-image-container {
+        height: 30rem;
+    }
+    .main-container {
+        padding-inline: 2rem;
+    }
+    .main-container .menu-homepage-container .mairie-menu {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    /* ==== NEWS ==== */
+
+    .main-container .news-container {
+        margin-bottom: 4rem;
+    }
+
+    .main-container .news-container .news {
+        border: 1px solid var(--clr-element-border);
+        border-radius: 0.5rem;
+    }
+}
+
+/* 
+    =============
+        DESKTOP
+    =============
+*/
+
+@media (min-width: 1024px) and (max-width: 1510px) {
+    .homepage-image-container {
+        height: 30rem;
+    }
+    .main-container {
+        padding-inline: 2rem;
+    }
+    .main-container .menu-homepage-container {
+        margin-inline: 15rem;
+    }
+    .main-container .menu-homepage-container .mairie-menu {
+        grid-template-columns: 1fr 1fr 1fr;
+        /* padding-inline: 8rem; */
+    }
+
+
+    /*
+    =============
+    NEWS & AGENDA
+    =============
+    */
+
+    .main-container .news-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-bottom: 4rem;
+    }
+
+    /* ==== NEWS ==== */
+
+    .main-container .news-container .news {
+        border: 1px solid var(--clr-element-border);
+        border-radius: 0.5rem;
+    }
+    
+}
+
+/* 
+    =============
+    LARGER DESKTOP
+    =============
+*/
+
+@media (min-width: 1511px) {
+    .homepage-image-container {
+        height: 30rem;
+    }
+    .main-container {
+        padding-inline: 2rem;
+    }
+    .main-container .menu-homepage-container {
+        margin-inline: 15rem;
+    }
+    .main-container .menu-homepage-container .mairie-menu {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    /*
+    =============
+    NEWS & AGENDA
+    =============
+    */
+
+    .main-container .news-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-bottom: 4rem;
+    }
+
+    /* ==== NEWS ==== */
+
+    .main-container .news-container .news {
+        border: 1px solid var(--clr-element-border);
+        border-radius: 0.5rem;
+    }
+}

@@ -1,7 +1,7 @@
 :root[data-theme="light"] {
 
     --clr-background : hsl(50, 20.0%, 99.0%);
-    --clr-subtle-background : hsl(60, 7.7%, 97.5%);
+    --clr-subtle-background : hsl(46, 38.2%, 93.7%);
 
     --clr-text-high-contrast : hsl(216, 71.0%, 23.0%);
     --clr-text-low-contrast : rgb(255, 255, 255);
