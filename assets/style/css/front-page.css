@@ -240,16 +240,6 @@
     box-shadow: 0 4px 24px -6px var(--clr-card-shadow);
 }
 
-#event-listing-view > div > div > div > a > div.wpem-event-infomation > div.wpem-event-details > div.wpem-event-location, #event-listing-view > div > div > div > a > div.wpem-event-infomation > div.wpem-event-date, #event-listing-view > div > div > div > a > div.wpem-event-banner, body > main > section > section.main-container > section.news-container > section.agenda > div > div.wpem-main.wpem-event-listings-header {
-    display: none;
-}
-
-#event-listing-view > div > div > div > a > div.wpem-event-infomation > div.wpem-event-details {
-    padding: 0;
-}
-
-
-
 /* 
     =============
         TABLET

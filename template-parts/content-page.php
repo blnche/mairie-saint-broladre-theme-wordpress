@@ -1,10 +1,17 @@
-<?php
-//add article element around it with header with thumbnails post if there is
-?>
 <section class="sub-pages-list">
     <nav>
-        <a href="">
-            <span class="label"></span>
+    <?php
+    $pages = get_pages();
+    $pageID = get_the_ID();
+    $pageChildren = get_page_children($pageID, $pages);
+
+    foreach ($pageChildren as $pageChild) {
+        ?>
+        <a href="<?php echo $pageChild->guid; ?>">
+            <span class="label"> <?php echo $pageChild->post_title; ?> </span>
         </a>
+    <?php
+    }
+    ?>
     </nav>
 </section>
