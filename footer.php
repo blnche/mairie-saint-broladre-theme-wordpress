@@ -1,5 +1,7 @@
+</section>
 </main>
-<footer>
+<footer class="footer">
+    <section class="container">
     <?php
         wp_nav_menu(
             array(
@@ -9,7 +11,9 @@
             )
         )
     ?>
-    <p>Thème créé par <a href="https://github.com/blnche">Blanche Peltier</a>. Icônes par <a href="https://icons8.com/">Icons8.</a></p>
+    </section>
+
+    <p>Thème créé par <a href="#">Blanche Peltier</a>. Icônes par <a href="https://icones8.fr/">Icons8</a>, et couleurs par <a href="https://www.radix-ui.com/colors">Radix</a>.</p>
 </footer>
 <script src="assets/js/main.js"></script>
 </body>

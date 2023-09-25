@@ -14,33 +14,44 @@
     <title><?php echo get_bloginfo( 'name' );?></title>
 </head>
 <body id="page_start">
-<header>
-    <img src="<?php header_image(); ?>" width="<?php echo absint(get_custom_header()->width); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name') ); ?>">
-    <section class="container header">
-        <h1>Mairie de <?php echo esc_attr(get_bloginfo( 'name' ));?></h1>
-        <nav>
+<menu id="interactive_menu" class="menu-container">
+    <li>
+        <a href="#" id="themeBtn">
+            <img width="32" height="32" src="https://img.icons8.com/FFFFFF/material-rounded/48/contrast.png" alt="contrast"/>
+        </a>
+    </li>
+    <li>
+        <a href="#page-start" id="ArrowUpBtn">
+            <img width="32" height="32" src="https://img.icons8.com/FFFFFF/fluency-systems-regular/48/up--v1.png" alt="up--v1"/>
+        </a>
+    </li>
+</menu>
+<header class="header">
+    <section class="container header-container">
+        <section class="header-title">
+            <h1><?php echo esc_attr(get_bloginfo( 'name' ));?></h1>
+            <p>Commune de la baie du Mont Saint Michel</p>
+        </section>
+        <nav id="mainMenu">
         <?php
             wp_nav_menu(
                 array(
                     'theme_location' => 'header',
-                    'items_wrap' => '<ul id="" class="">%3$s</ul>'
+                    'items_wrap' => '<ul class="site-links">%3$s</ul>'
                 )
             );
-            get_search_form();
         ?>
+        <ul class="contact-links">
+            <li><a href="/contact-page-layout.html" class="contact-link">Nous contacter</a></li>
+            <li><a href="tel:+33" class="contact-phone">02 01 03 04 05</a></li>
+        </ul>
+        <?php get_search_form(); ?>
         </nav>
+        <section class="header-menu-button-container">
+            <img width="48" height="48" src="https://img.icons8.com/FFFFFF/fluency-systems-filled/48/menu.png" alt="menu" id="burgerMenuBtn"/>
+        </section>
     </section>
 </header>
-<menu id="interactive_menu">
-    <li>
-        <a id="themeBtn">
-            <img width="96" height="96" src="https://img.icons8.com/plumpy/96/000000/contrast.png" alt="contrast"/>
-        </a>
-    </li>
-    <li>
-        <a href="#page_start" id="arrowUpBtn">
-            <img width="96" height="96" src="https://img.icons8.com/plumpy/96/000000/up--v1.png" alt="up--v1"/>
-        </a>
-    </li>
-</menu>
-<main class="container grid">
+<main>
+    <section class="main container">
+
