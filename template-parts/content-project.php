@@ -8,8 +8,18 @@
 <section class="sub-pages-list">
     <h2>Autres projets</h2>
     <nav>
-        <a href="">
-            <span class="label">Subpage Title</span>
-        </a>
+        <?php
+        $pages = get_pages();
+        $pageID = get_the_ID();
+        $pageChildren = get_page_children($pageID, $pages);
+
+        foreach ($pageChildren as $pageChild) {
+            ?>
+            <a href="<?php echo $pageChild->guid; ?>">
+                <span class="label"> <?php echo $pageChild->post_title; ?> </span>
+            </a>
+            <?php
+        }
+        ?>
     </nav>
 </section>

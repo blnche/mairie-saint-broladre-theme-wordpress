@@ -52,6 +52,11 @@ function register_my_menus()
 };
 add_action('init', 'register_my_menus');
 
+function register_pages_settings() {
+
+}
+add_action('init', 'register_pages_settings');
+
 /*function mairie_custom_header_setup() {
     $args = array(
         'default-text-color' => 'fff',

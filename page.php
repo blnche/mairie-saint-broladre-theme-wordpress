@@ -10,6 +10,8 @@
             get_template_part('template-parts/content', 'contact-form');
         } else if (get_the_title() === 'Projets en cours') {
             get_template_part('template-parts/content', 'project');
+        } else if (get_the_title() === 'Professionnels Locaux') {
+            get_template_part('template-parts/content', 'table');
         } else {
             if(have_posts()) {
                 while(have_posts()) {
