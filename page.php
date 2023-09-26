@@ -4,8 +4,6 @@
     <h1> <?php the_title(); ?></h1>
 
     <?php
-    // var_dump(get_the_title());
-
         if (get_the_title() === 'Nous contacter') {
             get_template_part('template-parts/content', 'contact-form');
         } else if (get_the_title() === 'Projets en cours') {
@@ -13,13 +11,16 @@
         } else if (get_the_title() === 'Professionnels Locaux') {
             get_template_part('template-parts/content', 'table');
         } else {
-            if(have_posts()) {
-                while(have_posts()) {
-                    the_post();
-                    get_template_part('template-parts/content', 'page');
-                }
+            $pageID = get_the_ID();
+            $pages = get_pages(
+                    array (
+                        'parent' => $pageID,
+                    )
+            );
+            if (empty($pages)) {
+                get_template_part('template-parts/content', 'single');
             } else {
-                echo 'Cette section est en cours de construction';
+                get_template_part('template-parts/content', 'page');
             }
         } ?>
 </section>

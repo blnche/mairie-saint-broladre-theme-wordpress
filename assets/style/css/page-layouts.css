@@ -196,6 +196,41 @@ body .main-container {
     background-color: var(--clr-background);
 }
 
+/* ============
+    SINGLE LAYOUT
+   ============ */
+
+.main-container article {
+    margin-bottom: 2rem;
+    padding-inline: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container article img {
+    width: 80%;
+    height: auto;
+    margin-block: 2rem;
+}
+
+.main-container article embed {
+    margin-block: 2rem;
+}
+
+/*
+    ==================
+        SMALLER MOBILE
+    ==================
+*/
+
+@media (max-width: 350px) {
+    .main-container article {
+        padding: 3rem;
+    }
+}
 
 /*
     =============

@@ -4,11 +4,13 @@
 <section class="professionals-list">
     <h2>Professionnels Santé</h2>
     <?php
-    $pages = get_pages();
     $pageID = get_the_ID();
-    $pageChildren = get_page_children($pageID, $pages);
-
-    foreach ($pageChildren as $pageChild) {
+    $pages = get_pages(
+        array (
+            'parent' => $pageID,
+        )
+    );
+    foreach ($pages as $pageChild) {
         $healthProfessional = get_field('professionnel_de_la_sante_checkbox', $pageChild->ID);
 
         if ($healthProfessional[0] === 'Oui') {
@@ -50,7 +52,7 @@
 <section class="professionals-list">
     <h2>Professionnels Locaux</h2>
     <?php
-    foreach ($pageChildren as $pageChild) {
+    foreach ($pages as $pageChild) {
     $healthProfessional = get_field('professionnel_de_la_sante_checkbox', $pageChild->ID);
 
         if ($healthProfessional[0] !== 'Oui') {

@@ -9,11 +9,14 @@
     <h2>Autres projets</h2>
     <nav>
         <?php
-        $pages = get_pages();
         $pageID = get_the_ID();
-        $pageChildren = get_page_children($pageID, $pages);
+        $pages = get_pages(
+            array (
+                'parent' => $pageID,
+            )
+        );
 
-        foreach ($pageChildren as $pageChild) {
+        foreach ($pages as $pageChild) {
             ?>
             <a href="<?php echo $pageChild->guid; ?>">
                 <span class="label"> <?php echo $pageChild->post_title; ?> </span>
