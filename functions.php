@@ -33,7 +33,7 @@
                 'caption',
                 'style',
                 'script',
-                'navigation-widgets',
+                'navigation-widgets'
             )
         );
         add_theme_support( 'editor-styles' );

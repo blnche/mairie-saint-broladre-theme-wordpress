@@ -1,14 +1,33 @@
-//The search results template is used to display a visitor’s search results.
 <?php get_header(); ?>
-<h1>Résultats de la recherche</h1>
-<article>
-    <?php
-    if(have_posts()) {
-        while(have_posts()) {
-            the_post();
-            get_template_part('template-parts/content', 'archive');
+
+<section class="main-container">
+    <h1>Résultats de la recherche</h1>
+    <section class="sub-pages-list">
+        <nav>
+        <?php
+        //var_dump(get_search_query());
+        $query = strtolower(get_search_query());
+        $queryArray = explode(' ', $query);
+        //var_dump($queryArray);
+        $pages = get_pages();
+
+        foreach ($pages as $page) {
+
+            $pageTitle = strtolower($page->post_title);
+            $pageId = $page->ID;
+
+            foreach ($queryArray as $query) {
+                if(str_contains($pageTitle, $query)) { ?>
+                    <a href="<?php echo $page->guid; ?>">
+                        <span class="label"> <?php echo $page->post_title; ?> </span>
+                    </a>
+                    <?php
+                }
+            }
         }
-    }
-    ?>
-</article>
+        ?>
+        </nav>
+    </section>
+</section>
+
 <?php get_footer(); ?>
