@@ -11,9 +11,9 @@
         )
     );
     foreach ($pages as $pageChild) {
-        $healthProfessional = get_field('professionnel_de_la_sante_checkbox', $pageChild->ID);
+        $healthProfessional = get_field('professionnel_de_la_sante_true_false', $pageChild->ID);
 
-        if ($healthProfessional[0] === 'Oui') {
+        if ($healthProfessional === true) {
         ?>
         <article>
             <h3> <?php echo $pageChild->post_title; ?> </h3>
@@ -53,9 +53,9 @@
     <h2>Professionnels Locaux</h2>
     <?php
     foreach ($pages as $pageChild) {
-    $healthProfessional = get_field('professionnel_de_la_sante_checkbox', $pageChild->ID);
+    $healthProfessional = get_field('professionnel_de_la_sante_true_false', $pageChild->ID);
 
-        if ($healthProfessional[0] !== 'Oui') {
+        if ($healthProfessional === false) {
         ?>
         <article>
             <h3><?php echo $pageChild->post_title; ?></h3>

@@ -1,11 +1,10 @@
 <?php get_header(); ?>
 
 <article>
-    <p>SINGLE Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius tenetur perspiciatis quasi mollitia! Reiciendis.</p>
+    <?php echo 'SINGLE' ?>
+    <p> <?php the_content(); ?> </p>
     <?php
     if(has_block('core/image', get_the_ID())){
-        echo 'OK';
-
         $content = parse_blocks(get_the_content());
 
         foreach ($content as $data) {

@@ -5,10 +5,8 @@
     <section class="sub-pages-list">
         <nav>
         <?php
-        //var_dump(get_search_query());
         $query = strtolower(get_search_query());
         $queryArray = explode(' ', $query);
-        //var_dump($queryArray);
         $pages = get_pages();
 
         foreach ($pages as $page) {

@@ -278,12 +278,11 @@
     .homepage-image-container {
         height: 30rem;
     }
-    .main-container {
-        padding-inline: 2rem;
-    }
+
     .main-container .menu-homepage-container {
         margin-inline: 15rem;
     }
+
     .main-container .menu-homepage-container .mairie-menu {
         grid-template-columns: 1fr 1fr 1fr;
         /* padding-inline: 8rem; */
