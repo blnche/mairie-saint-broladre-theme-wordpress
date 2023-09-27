@@ -58,12 +58,12 @@ NAVIGATION
 
 .header-container nav {
     height: 100%;
-    padding: 12rem 1rem;
+
 
     display: none;
 
     position:fixed;
-    top: 0;
+    top: 120px;
     left:0;
     right: 0;
     bottom: 0;
@@ -94,6 +94,12 @@ NAVIGATION
 
     text-align: center;
     text-transform: uppercase;
+
+    position: relative;
+}
+
+.header-container nav .site-links li a {
+    position: relative;
 }
 
 .header-container nav .site-links li:hover{
@@ -124,6 +130,11 @@ NAVIGATION
 .header-container .sub-menu {
     display: none;
     justify-items: center;
+
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    left: 0;
 }
 
 .header-container .sub-menu li a {
