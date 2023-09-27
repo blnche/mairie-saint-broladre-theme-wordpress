@@ -119,8 +119,7 @@ body .header {
     display: none;
     justify-items: center;
 
-    position: absolute;
-    top: 2rem;
+    position: relative;
     right: 0;
     left: 0;
 }
