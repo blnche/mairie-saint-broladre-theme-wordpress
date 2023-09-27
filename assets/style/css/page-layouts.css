@@ -93,19 +93,29 @@ body .main-container {
 
 .main-container .last-project article figure img {
     margin-block: 2rem;
+
+    border: 1px solid var(--clr-element-border);
+    border-radius: 0.5rem;
 }
 
-.main-container .last-project article p {
+.main-container .last-project article .text-section p {
+    padding: 1.5rem 2rem;
 
+    order: 0;
 }
 
 .main-container .last-project .text-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.main-container .last-project article a {
+.main-container .last-project article .text-section a {
+    width: fit-content;
+
     padding: 1.5rem 2rem;
 
     grid-column: 1 / 2;
@@ -119,13 +129,13 @@ body .main-container {
     box-shadow: 0 4px 24px -6px var(--clr-button-shadow );
 }
 
-.main-container .last-project article a:hover {
+.main-container .last-project article .text-section a:hover {
     background-color: var(--clr-button-background-hover);
 
     border: 1.5px solid var(--clr-button-border-active);
 }
 
-.main-container .last-project article a:active {
+.main-container .last-project article .text-section a:active {
     background-color: var(--clr-button-background-active);
 
     border: 1.5px solid var(--clr-button-border-active);
@@ -269,6 +279,9 @@ body .main-container {
     margin-block: 2rem;
 
     order: 0;
+
+    border: 1px solid var(--clr-element-border);
+    border-radius: 0.5rem;
 }
 
 .main-container article div a.wp-block-file__button.wp-element-button {
@@ -358,15 +371,19 @@ body .main-container {
         grid-column: span 2;
     }
 
-    .main-container .last-project article a {
-        grid-column: 2 / 3;
+    .main-container .last-project article .text-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .main-container .last-project article .text-section a {
+        grid-column: 1 / 2;
     }
 
     .main-container .last-project article figure img {
         width: 70%;
-
-        border: 1px solid var(--clr-element-border);
-        border-radius: 0.5rem;
     }
 
     .main-container article {
@@ -375,11 +392,6 @@ body .main-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
-    }
-
-    .main-container article figure img {
-        border: 1px solid var(--clr-element-border);
-        border-radius: 0.5rem;
     }
 }
 
@@ -420,15 +432,19 @@ body .main-container {
         grid-column: span 2;
     }
 
-    .main-container .last-project article a {
-        grid-column: 2 / 3;
+    .main-container .last-project article .text-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .main-container .last-project article .text-section a {
+        grid-column: 1 / 2;
     }
 
     .main-container .last-project article figure img {
         width: 70%;
-
-        border: 1px solid var(--clr-element-border);
-        border-radius: 0.5rem;
     }
 
     /* ============
@@ -441,10 +457,5 @@ body .main-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
-    }
-
-    .main-container article figure img {
-        border: 1px solid var(--clr-element-border);
-        border-radius: 0.5rem;
     }
 }

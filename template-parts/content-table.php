@@ -1,10 +1,11 @@
+<?php echo 'table'; ?>
 <article>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius tenetur perspiciatis quasi mollitia! Reiciendis.</p>
 </article>
 <section class="professionals-list">
     <h2>Professionnels Santé</h2>
     <?php
-    $pageID = 3;
+    $pageID = get_the_ID();
     $pages = get_pages(
         array (
             'parent' => $pageID,

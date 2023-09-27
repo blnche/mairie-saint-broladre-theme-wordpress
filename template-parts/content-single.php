@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<article>
     <?php echo 'SINGLE' ?>
+<article>
     <?php
     $content = parse_blocks(get_the_content(get_the_ID()));
 
@@ -11,6 +11,9 @@
             echo $data['innerHTML'];
         }
         if($data['blockName'] === 'core/image'){
+            echo $data['innerHTML'];
+        }
+        if($data['blockName'] === 'core/file') {
             echo $data['innerHTML'];
         }
     }

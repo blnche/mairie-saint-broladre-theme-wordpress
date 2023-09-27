@@ -1,3 +1,4 @@
+<?php echo 'content-page'; ?>
 <section class="sub-pages-list">
     <nav>
     <?php
@@ -7,7 +8,7 @@
                 'parent' => $pageID,
             )
     );
-     echo 'content-page';
+
     foreach ($pages as $pageChild) {
         ?>
         <a href="<?php echo $pageChild->guid; ?>">
