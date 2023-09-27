@@ -4,7 +4,7 @@
 <section class="professionals-list">
     <h2>Professionnels Santé</h2>
     <?php
-    $pageID = get_the_ID();
+    $pageID = 3;
     $pages = get_pages(
         array (
             'parent' => $pageID,

@@ -5,37 +5,31 @@
                 'parent' => $pageID,
             )
         );
-
-    ?>
+echo 'project'
+?>
 <section class="last-project">
     <article>
         <?php
         foreach ($pages as $page) {
             $headline = get_field('projet_a_laffiche', $page->ID);
 
-            if ($headline === true) {
-            ?>
-            <h2> <?php echo $page->post_title; ?> </h2>
-            <?php
-            if(has_block('core/image', $page->ID)){
-                $content = parse_blocks(get_the_content($post = $page->ID));
+            if ($headline === true) { ?>
+                <h2> <?php echo $page->post_title; ?> </h2>
+                <?php
+                $content = parse_blocks(get_the_content($post = $page));
 
                 foreach ($content as $data) {
-                    $imgURL = wp_get_attachment_image_url($data['attrs']['id'], $size = 'full');
-
-                    ?>
-                    <img src=" <?php echo $imgURL ?> ">
-                    <?php
-                }
-             }
-            ?>
+                    if($data['blockName'] === 'core/image'){
+                        echo $data['innerHTML'];
+                    }
+                } ?>
             <section class="text-section">
                 <p> <?php echo get_field('description_courte_du_projet', $page->ID) ?> </p>
                 <a href="<?php echo $page->guid; ?>"> En savoir plus </a>
             </section>
             <?php
             }
-        }?>
+        } ?>
     </article>
 </section>
 <section class="sub-pages-list">

@@ -7,7 +7,7 @@
                 'parent' => $pageID,
             )
     );
-    var_dump($pages);
+     echo 'content-page';
     foreach ($pages as $pageChild) {
         ?>
         <a href="<?php echo $pageChild->guid; ?>">
