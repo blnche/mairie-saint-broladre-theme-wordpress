@@ -23,7 +23,7 @@
 
             foreach ($queryArray as $query) {
                 $queryWithoutAccent = strtr($query, $unwanted_array );
-                
+
                 if(str_contains($pageTitleWithoutAccent, $queryWithoutAccent)) { ?>
                     <a href="<?php echo $page->guid; ?>">
                         <span class="label"> <?php echo $page->post_title; ?> </span>

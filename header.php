@@ -29,7 +29,7 @@
 <header class="header">
     <section class="container header-container">
         <section class="header-title">
-            <h1><?php echo esc_attr(get_bloginfo( 'name' ));?></h1>
+            <h1><a href="<?php echo get_home_url() ?>"><?php echo esc_attr(get_bloginfo( 'name' ));?></a></h1>
             <p>Commune de la baie du Mont Saint Michel</p>
         </section>
         <nav id="mainMenu">
