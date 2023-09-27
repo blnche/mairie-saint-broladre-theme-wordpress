@@ -29,23 +29,32 @@ function burgerMenu () {
         }
     });
 
-    let subMenu = document.querySelectorAll('.header-container nav .site-links .subMenuParent');
+    let subMenu = document.querySelectorAll('.header-container nav .site-links .menu-item-has-children');
     console.log(subMenu);
     let mainMenuLinksContainer = document.querySelector('.header-container nav .site-links');
 
     for (let i = 0; i < subMenu.length; i++) {
-        subMenu[i].addEventListener('click', function () {
-            if (mainMenuLinksContainer.style.height === '40%') {
+        let linkChildren = subMenu[i].children[0];
+        subMenu[i].addEventListener('click', function (linkChildren) {
+            linkChildren.preventDefault();
+            if (mainMenuLinksContainer.style.height === '30rem') {
                 mainMenuLinksContainer.style.height = 'auto';
             } else {
-                mainMenuLinksContainer.style.height = '40%';
+                mainMenuLinksContainer.style.height = '30rem';
             }
         });
     }
+    window.addEventListener('resize', function (event) {
+        if (window.screen.width >= 1024) {
+            mainMenuLinksContainer.style.height = 'auto';
+        }
+    }, true);
 }
 
 function foldingMenu () {
     let menu = document.querySelectorAll('.sub-menu');
+
+    let mainMenuLinksContainer = document.querySelector('.header-container nav .site-links');
 
     for (let i = 0; i < menu.length; i++) {
         let foldingMenuParent = menu[i].parentNode;
@@ -53,6 +62,14 @@ function foldingMenu () {
         foldingMenuParent.addEventListener('click', function () {
             menu[i].classList.toggle('active');
         })
+
+        window.addEventListener('resize', function (event) {
+            if (window.screen.width >= 1024 && menu[i].classList.contains('active')) {
+                mainMenuLinksContainer.style.height = 'auto';
+                menu[i].classList.remove('active');
+            }
+        }, true);
     }
+
 
 }
