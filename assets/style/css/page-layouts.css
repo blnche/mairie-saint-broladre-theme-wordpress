@@ -393,6 +393,22 @@ body .main-container {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
+
+    /* ============
+        SINGLE LAYOUT
+       ============ */
+
+    .main-container article {
+        padding: 2rem;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .main-container article .wp-block-file {
+        grid-column: span 2;
+    }
 }
 
 /*
@@ -457,5 +473,9 @@ body .main-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+    }
+
+    .main-container article .wp-block-file {
+        grid-column: span 2;
     }
 }
