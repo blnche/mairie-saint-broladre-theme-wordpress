@@ -20,6 +20,11 @@
             <?php /*//echo do_shortcode('[wp_dark_mode]') */?>
         </a>
     </li>-->
+    <!--<li>
+        <a href="#" id="themeBtn">
+            <img width="32" height="32" src="https://img.icons8.com/FFFFFF/material-rounded/48/contrast.png" alt="contrast"/>
+        </a>
+    </li>-->
     <li>
         <a href="#top" id="ArrowUpBtn">
             <img width="32" height="32" src="https://img.icons8.com/FFFFFF/fluency-systems-regular/48/up--v1.png" alt="up--v1"/>
