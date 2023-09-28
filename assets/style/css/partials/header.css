@@ -17,7 +17,7 @@ body .header {
 
     border-radius: 0.5rem;
 
-    z-index: 1000;
+    z-index: 1;
 }
 
 .header-container, .header-container .header-title {
@@ -29,7 +29,7 @@ body .header {
     flex-direction: column;
     justify-content: center;
 
-    z-index: 1000;
+    /*z-index: 1000;*/
 }
 
 .header-container .header-title h1 {
@@ -98,11 +98,28 @@ body .header {
     background-color: var(--clr-card-background-hover);
 }
 
+.header-container nav .menu-menu-principal-container .site-links .menu-item-has-children a:hover {
+    background-color: var(--clr-element-background-active);
+    border-radius: 0.5rem;
+}
+
+.header-container nav .menu-menu-principal-container .site-links .menu-item-has-children {
+    position: relative;
+}
+
+.header-container nav .menu-menu-principal-container .site-links .menu-item-has-children span {
+    position: absolute;
+    right: 10%;
+    top: 1rem;
+
+    cursor: pointer;
+}
+
 .header-container nav .menu-menu-principal-container .site-links li:active {
     background-color: var(--clr-card-background-active);
 }
 
-.header-container nav .menu-menu-principal-container .site-links .current-page-ancestor {
+.header-container nav .menu-menu-principal-container .site-links .current-menu-parent {
     border-bottom: 2px solid var(--clr-accent);
 }
 
@@ -119,7 +136,7 @@ body .header {
     background-color: var(--clr-card-background-active);
 }
 
-.header-container .sub-menu {
+.menu-item-has-children .sub-menu {
     display: none;
     justify-items: center;
 
@@ -327,6 +344,37 @@ body .header {
         display: flex;
 
         background-color: transparent;
+
+        overflow: visible;
+    }
+
+    .menu-item-has-children span {
+        display: none;
+    }
+
+    .menu-item-has-children .sub-menu {
+        display: none;
+
+        position: absolute;
+        top: 3rem;
+
+        background-color: var(--clr-background);
+        box-shadow: 0 9px 38px -11px var(--clr-card-shadow);
+
+        /*border: 1px solid var(--clr-card-border);*/
+        border-radius: 0.5rem;
+
+        z-index: 1000;
+    }
+
+    .menu-item-has-children:hover .sub-menu {
+        display: block;
+    }
+
+    .menu-item-has-children:hover .sub-menu li a {
+        padding: 0;
+
+        line-height: 1.2;
     }
 
     .header-container nav .contact-links {

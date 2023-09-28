@@ -9,78 +9,60 @@ function screenWidthSettings () {
     mainMenuLinksContainer.style.height = 'auto';
 }
 function burgerMenu () {
+// use the touchstart event listener to only activate folding submenu on mobile ? and use hover state for desktop ?
     let burgerMenuButton = document.getElementById('burgerMenuBtn');
     let menu = document.getElementById('mainMenu');
     let body = document.querySelector('body');
 
+    let liWithSubMenu = document.querySelectorAll('.menu-item-has-children');
+    console.log(liWithSubMenu);
+
+    for(let i = 0; i < liWithSubMenu.length; i++) {
+
+        let parent = liWithSubMenu[i].parentNode;
+
+        if (parent.classList.contains('sub-menu')) {
+            // We don't append a span element to submen item with submenu
+        } else {
+            let span = document.createElement("span");
+            let arrow = document.createTextNode('⬇︎');
+            span.appendChild(arrow);
+            liWithSubMenu[i].appendChild(span);
+        }
+    }
+
     burgerMenuButton.addEventListener('click', function () {
-        let theme = document.documentElement.getAttribute('data-theme');
+
         menu.classList.toggle('active');
 
         if (menu.getAttribute('class') === 'active') {
             body.style.overflow ='hidden';
-
-            burgerMenuButton.setAttribute('alt', 'multiply');
-            if (theme === 'dark') {
-                burgerMenuButton.setAttribute('src', 'https://img.icons8.com/000000/fluency-systems-filled/48/menu.png');
-            } else if (theme === 'light') {
-                burgerMenuButton.setAttribute('src', 'https://img.icons8.com/FFFFFF/sf-regular-filled/48/multiply.png');
-            }
         } else {
             body.style.overflow ='auto';
-
-            burgerMenuButton.setAttribute('alt','menu');
-            if (theme === 'dark') {
-                burgerMenuButton.setAttribute('src', 'https://img.icons8.com/000000/fluency-systems-filled/48/menu.png');
-            } else if (theme === 'light') {
-                burgerMenuButton.setAttribute('src', 'https://img.icons8.com/FFFFFF/fluency-systems-filled/48/menu.png');
-
-            }
         }
+
+
     });
-
-    let subMenu = document.querySelectorAll('.header-container nav .site-links .menu-item-has-children');
-    console.log(subMenu);
-    let mainMenuLinksContainer = document.querySelector('.header-container nav .site-links');
-
-    for (let i = 0; i < subMenu.length; i++) {
-        console.log(subMenu[i]);
-        let linkChildren = subMenu[i].children[0];
-
-        subMenu[i].addEventListener('click', function (linkChildren) {
-            linkChildren.preventDefault();
-            if (mainMenuLinksContainer.style.height === '30rem') {
-                mainMenuLinksContainer.style.height = 'auto';
-            } else {
-                mainMenuLinksContainer.style.height = '30rem';
-            }
-        });
-
-    }
-    window.addEventListener('resize', function (event) {
-        if (window.screen.width >= 1024) {
-            mainMenuLinksContainer.style.height = 'auto';
-        }
-    }, true);
 }
 function foldingMenu () {
     let menu = document.querySelectorAll('.sub-menu');
-
-    let mainMenuLinksContainer = document.querySelector('.header-container nav .site-links');
 
     for (let i = 0; i < menu.length; i++) {
         let foldingMenuParent = menu[i].parentNode;
 
         foldingMenuParent.addEventListener('click', function () {
+
             menu[i].classList.toggle('active');
         })
 
-        window.addEventListener('resize', function (event) {
-            if (window.screen.width >= 1024 && menu[i].classList.contains('active')) {
-                mainMenuLinksContainer.style.height = 'auto';
-                menu[i].classList.remove('active');
+        for (let j = 0; j < menu[i].children.length; j++) {
+
+            if (menu[i].children[j].classList.contains('menu-item-has-children')) {
+                let subSubMenu = menu[i].children[j].children[1];
+
+                subSubMenu.style.display = 'none';
             }
-        }, true);
+        }
     }
 
 
