@@ -102,6 +102,10 @@ body .header {
     background-color: var(--clr-card-background-active);
 }
 
+.header-container nav .menu-menu-principal-container .site-links .current-page-ancestor {
+    border-bottom: 2px solid var(--clr-accent);
+}
+
 .header-container nav .menu-menu-principal-container .site-links li [aria-current='page'] {
     border-bottom: 2px solid var(--clr-accent);
 }

@@ -44,7 +44,9 @@ function burgerMenu () {
     let mainMenuLinksContainer = document.querySelector('.header-container nav .site-links');
 
     for (let i = 0; i < subMenu.length; i++) {
+        console.log(subMenu[i]);
         let linkChildren = subMenu[i].children[0];
+
         subMenu[i].addEventListener('click', function (linkChildren) {
             linkChildren.preventDefault();
             if (mainMenuLinksContainer.style.height === '30rem') {
@@ -53,6 +55,7 @@ function burgerMenu () {
                 mainMenuLinksContainer.style.height = '30rem';
             }
         });
+
     }
     window.addEventListener('resize', function (event) {
         if (window.screen.width >= 1024) {
