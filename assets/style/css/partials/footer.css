@@ -39,6 +39,10 @@ body .footer nav {
     letter-spacing: 0.15rem;
 }
 
+.footer .menu-menu-de-bas-de-page-container .ul .menu-item-has-children .sub-menu {
+    display: none;
+}
+
 .footer p {
     margin-block: 6rem 3rem;
     padding: 1.5rem;
@@ -74,5 +78,9 @@ body .footer nav {
     .footer .container .menu-menu-de-bas-de-page-container ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .footer .menu-menu-de-bas-de-page-container .ul .menu-item-has-children ul {
+        display: none;
     }
 }

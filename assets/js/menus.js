@@ -20,10 +20,12 @@ function burgerMenu () {
     for(let i = 0; i < liWithSubMenu.length; i++) {
 
         let parent = liWithSubMenu[i].parentNode;
+        let divMenu = liWithSubMenu[i].parentNode.parentNode;
+        console.log(divMenu);
 
         if (parent.classList.contains('sub-menu')) {
-            // We don't append a span element to submen item with submenu
-        } else {
+            // We don't append a span element to submenu item with submenu
+        } else if (divMenu.classList.contains('menu-menu-principal-container')) {
             let span = document.createElement("span");
             let arrow = document.createTextNode('⬇︎');
             span.appendChild(arrow);
@@ -33,9 +35,9 @@ function burgerMenu () {
 
     burgerMenuButton.addEventListener('click', function () {
 
-        menu.classList.toggle('active');
+        menu.classList.toggle('mainMenuActive');
 
-        if (menu.getAttribute('class') === 'active') {
+        if (menu.getAttribute('class') === 'mainMenuActive') {
             body.style.overflow ='hidden';
         } else {
             body.style.overflow ='auto';
@@ -51,7 +53,7 @@ function foldingMenu () {
         let foldingMenuParent = menu[i].parentNode;
 
         foldingMenuParent.addEventListener('click', function () {
-
+            console.log('clicked');
             menu[i].classList.toggle('active');
         })
 
@@ -59,7 +61,7 @@ function foldingMenu () {
 
             if (menu[i].children[j].classList.contains('menu-item-has-children')) {
                 let subSubMenu = menu[i].children[j].children[1];
-
+                console.log(subSubMenu);
                 subSubMenu.style.display = 'none';
             }
         }
