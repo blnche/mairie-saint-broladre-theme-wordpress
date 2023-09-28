@@ -39,7 +39,7 @@ body .footer nav {
     letter-spacing: 0.15rem;
 }
 
-.footer .menu-menu-de-bas-de-page-container .ul .menu-item-has-children .sub-menu {
+.footer .container .menu-menu-de-bas-de-page-container ul .menu-item-has-children .sub-menu {
     display: none;
 }
 
@@ -78,9 +78,5 @@ body .footer nav {
     .footer .container .menu-menu-de-bas-de-page-container ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-
-    .footer .menu-menu-de-bas-de-page-container .ul .menu-item-has-children ul {
-        display: none;
     }
 }
