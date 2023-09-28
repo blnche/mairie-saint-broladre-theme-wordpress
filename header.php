@@ -13,15 +13,15 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />
     <title><?php echo get_bloginfo( 'name' );?></title>
 </head>
-<body id="page_start">
+<body>
 <menu id="interactive_menu" class="menu-container">
-    <li>
+    <!--<li>
         <a href="#" id="themeBtn">
-            <img width="32" height="32" src="https://img.icons8.com/FFFFFF/material-rounded/48/contrast.png" alt="contrast"/>
+            <?php /*//echo do_shortcode('[wp_dark_mode]') */?>
         </a>
-    </li>
+    </li>-->
     <li>
-        <a href="#page-start" id="ArrowUpBtn">
+        <a href="#top" id="ArrowUpBtn">
             <img width="32" height="32" src="https://img.icons8.com/FFFFFF/fluency-systems-regular/48/up--v1.png" alt="up--v1"/>
         </a>
     </li>
