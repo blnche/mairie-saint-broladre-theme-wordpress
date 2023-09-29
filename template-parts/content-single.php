@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<article class="association">
+<article class="single">
 <?php if (get_field('association_true_false', get_the_ID() === true )) {
 
     $content = parse_blocks(get_the_content(get_the_ID()));
@@ -29,9 +29,7 @@
             echo $data['innerHTML'];
         }
     }
-    ?></section><?php
-
-    ?>
+    ?></section>
     <address>
             <?php
             $address = get_field('adresse_postale', get_the_ID());

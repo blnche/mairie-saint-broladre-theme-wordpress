@@ -312,26 +312,26 @@ body .main-container {
     border: 1.5px solid var(--clr-button-border-active);
 }
 
-.main-container .association {
+.main-container .single {
     display: flex;
 }
 
-.main-container .association address {
+.main-container .single address {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 
-.main-container .association address > * {
+.main-container .single address > * {
     margin: 1rem;
 }
 
-.main-container .association address a {
+.main-container .single address a {
     position: relative;
 }
 
-.main-container .association address a:after {
+.main-container .single address a:after {
     width: 7.5rem;
     height: 0.3rem;
 
@@ -346,7 +346,7 @@ body .main-container {
     position: absolute;
 }
 
-.main-container .association img {
+.main-container .single img {
     width: auto;
     height: 7rem;
 
@@ -453,7 +453,7 @@ body .main-container {
         grid-column: span 2;
     }
 
-    .main-container .association {
+    .main-container .single {
         display: grid;
         grid-gap: 2rem;
         grid-template-areas:
@@ -461,21 +461,21 @@ body .main-container {
                 "text address";
     }
 
-    .main-container .association p {
+    .main-container .single p {
         order: unset;
 
         padding: 1rem;
     }
 
-    .main-container .association .text {
+    .main-container .single .text {
         grid-area: text;
     }
 
-    .main-container .association .img {
+    .main-container .single .img {
         grid-area: img;
     }
 
-    .main-container .association address {
+    .main-container .single address {
         grid-area: address;
 
         display: flex;
@@ -483,15 +483,15 @@ body .main-container {
         align-items: flex-start;
     }
 
-    .main-container .association address > * {
+    .main-container .single address > * {
         margin: 1rem;
     }
 
-    .main-container .association address a {
+    .main-container .single address a {
         position: relative;
     }
 
-    .main-container .association address a:after {
+    .main-container .single address a:after {
         width: 7.5rem;
         height: 0.3rem;
 
@@ -506,7 +506,7 @@ body .main-container {
         position: absolute;
     }
 
-    .main-container .association .img .wp-block-image {
+    .main-container .single .img .wp-block-image {
         width: auto;
         height: auto;
 
@@ -519,16 +519,16 @@ body .main-container {
         background-color: var(--clr-background);
     }
 
-    .main-container .association .img .wp-block-image img {
+    .main-container .single .img .wp-block-image img {
         height: auto;
     }
 
-    .main-container .association .text .wp-block-table {
+    .main-container .single .text .wp-block-table {
         flex-direction: column;
         align-items: center;
     }
 
-    .main-container .association .text .wp-block-table table {
+    .main-container .single .text .wp-block-table table {
         width: fit-content;
 
         color: var(--clr-element-border-active);
