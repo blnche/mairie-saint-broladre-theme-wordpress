@@ -297,7 +297,7 @@
 
     .main-container .news-container {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
         margin-bottom: 4rem;
     }
 
@@ -339,7 +339,7 @@
 
     .main-container .news-container {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
         margin-bottom: 4rem;
     }
 
