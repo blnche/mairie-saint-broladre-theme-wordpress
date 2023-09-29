@@ -14,7 +14,7 @@
                         <img src="
                     <?php
                         if ($item->title === 'Conseil Municipal') {
-                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-city-hall-40.png');
+                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-city-hall-64.png');
                         } else if ($item->title === 'Location de salles') {
                             echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-lease-40.png');
                         } else if ($item->title === 'Restaurant Scolaire') {
@@ -24,7 +24,7 @@
                         } else if ($item->title === 'Annuaire de contacts') {
                             echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-address-book-40.png');
                         } else if ($item->title === 'Agence Postale Communale') {
-                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-post-office-40.png');
+                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-post-office-64.png');
                         } else {
                             echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-full-image-40.png');
                         }
