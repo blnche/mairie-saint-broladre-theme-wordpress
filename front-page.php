@@ -67,27 +67,16 @@
                 <?php }
                 wp_reset_postdata();
             }
-
             ?>
         </section>
         <section class="agenda">
             <h2>Agenda</h2>
-            <?php //$events = get_em_events();
-            //var_dump($events );
-            //echo do_shortcode("[events show_categories='false' show_tags='false show_event_types='false show_category_multiselect='false show_event_type_multiselect='false' show_more='false' show_pagination='false' layout_type='List' per_page='5' orderby='event_start_date' show_filters='false']"); ?>
             <ul>
                 <?php echo do_shortcode('[events_list limit="5"] <li>#_EVENTNAME, #_EVENTDATES {has_time} , de #_EVENTTIMES {/has_time}</li>[/events_list]'); ?>
             </ul>
         </section>
     </section>
 </section>
-<?php
-    //wp_nav_menu(
-      //  array(
-        //    'theme_location' => 'home',
-          //  'items_wrap' => '<ul id="" class="">%3$s</ul>'
-        //)
-    //);
-?>
+
 <?php get_footer(); ?>
 

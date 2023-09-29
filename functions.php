@@ -13,7 +13,6 @@ add_theme_support( 'post-formats', array('link', 'aside', 'gallery', 'image', 'q
 add_theme_support( 'html5', array('comment-form', 'comment-list', 'gallery', 'caption', 'style', 'script', 'navigation-widgets'));
 add_theme_support( 'editor-styles' );
 add_theme_support( 'responsive-embeds' );
-add_theme_support('custom-logo');
 
 // ===============
 // == FUNCTIONS ==
@@ -43,4 +42,17 @@ function theme_mairie_scripts() : void
     wp_enqueue_script('menus', get_template_directory_uri() . '/assets/js/menus.js');
 }
 add_action('wp_enqueue_scripts', 'theme_mairie_scripts');
+
+function mairie_custom_header_setup() : void {
+    $args = array(
+        'default-text-color' => 'fff',
+        'header-text' => true,
+        'width' => 900,
+        'height' => 250,
+        'flex-width' => true,
+        'flex-height' => true,
+    );
+    add_theme_support('custom-header', $args);
+}
+add_action('after_setup_theme', 'mairie_custom_header_setup', 1);
 ?>
