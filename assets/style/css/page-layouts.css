@@ -312,6 +312,49 @@ body .main-container {
     border: 1.5px solid var(--clr-button-border-active);
 }
 
+.main-container .association {
+    display: flex;
+}
+
+.main-container .association address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.main-container .association address > * {
+    margin: 1rem;
+}
+
+.main-container .association address a {
+    position: relative;
+}
+
+.main-container .association address a:after {
+    width: 7.5rem;
+    height: 0.3rem;
+
+    margin: 0.5rem auto;
+
+    content: "";
+
+    display: block;
+
+    background-color: var(--clr-accent);
+
+    position: absolute;
+}
+
+.main-container .association img {
+    width: auto;
+    height: 7rem;
+
+    align-self: flex-end;
+
+    background-color: var(--clr-background);
+}
+
 /*
     ==================
         SMALLER MOBILE
@@ -408,6 +451,87 @@ body .main-container {
 
     .main-container article .wp-block-file {
         grid-column: span 2;
+    }
+
+    .main-container .association {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-areas:
+                "text img"
+                "text address";
+    }
+
+    .main-container .association p {
+        order: unset;
+
+        padding: 1rem;
+    }
+
+    .main-container .association .text {
+        grid-area: text;
+    }
+
+    .main-container .association .img {
+        grid-area: img;
+    }
+
+    .main-container .association address {
+        grid-area: address;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-container .association address > * {
+        margin: 1rem;
+    }
+
+    .main-container .association address a {
+        position: relative;
+    }
+
+    .main-container .association address a:after {
+        width: 7.5rem;
+        height: 0.3rem;
+
+        margin: 0.5rem auto;
+
+        content: "";
+
+        display: block;
+
+        background-color: var(--clr-accent);
+
+        position: absolute;
+    }
+
+    .main-container .association .img .wp-block-image {
+        width: auto;
+        height: auto;
+
+        grid-area: img;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: var(--clr-background);
+    }
+
+    .main-container .association .img .wp-block-image img {
+        height: auto;
+    }
+
+    .main-container .association .text .wp-block-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-container .association .text .wp-block-table table {
+        width: fit-content;
+
+        color: var(--clr-element-border-active);
     }
 }
 

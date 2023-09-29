@@ -38,16 +38,11 @@ echo 'project';
         <?php
         foreach ($pages as $page) {
             $headline = get_field('projet_a_laffiche', $page->ID);
-            //var_dump($headline);
 
-            if ($headline === false) {
-            //var_dump($page->ID);
-            //var_dump($page->post_date);
-            ?>
+            if ($headline === false) { ?>
             <a href="<?php echo $page->guid; ?>">
                 <span class="label"> <?php echo $page->post_title; ?> </span>
-            </a>
-            <?php
+            </a> <?php
             }
         }
         ?>

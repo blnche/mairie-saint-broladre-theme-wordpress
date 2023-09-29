@@ -1,7 +1,17 @@
 <?php echo 'table'; ?>
-<article>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eius tenetur perspiciatis quasi mollitia! Reiciendis.</p>
-</article>
+<?php
+$content = parse_blocks(get_the_content(get_the_ID()));
+
+foreach ($content as $data) {
+
+    if ($data['blockName'] === 'core/paragraph') {
+        ?>
+        <article>
+            <?php echo $data['innerHTML']; ?>
+        </article> <?php
+    }
+}
+?>
 <section class="professionals-list">
     <h2>Professionnels Santé</h2>
     <?php
@@ -28,8 +38,13 @@
                 <p>
                     <?php echo $address ?>
                 </p>
-                <a href="mailto:<?php echo $email ?>"> <?php echo $email ?> </a>
-                <a href="tel:+33<?php echo $phone ?>"> <?php echo '0'.$phone ?> </a>
+                <?php if(!empty($email)) { ?>
+                <a href="mailto:<?php echo $email ?>"> <?php echo $email ?> </a> <?php
+                }?>
+                <?php if(!empty($phone)) { ?>
+                <a href="tel:+33<?php echo $phone ?>"> <?php echo '0'.$phone ?> </a> <?php
+                }
+                ?>
             </address>
             <img
             <?php
@@ -69,8 +84,13 @@
                 <p>
                     <?php echo $address ?>
                 </p>
-                <a href="mailto:<?php echo $email ?>"> <?php echo $email ?> </a>
-                <a href="tel:+33<?php echo $phone ?>"> <?php echo '0'.$phone ?> </a>
+                <?php if(!empty($email)) { ?>
+                    <a href="mailto:<?php echo $email ?>"> <?php echo $email ?> </a> <?php
+                }?>
+                <?php if(!empty($phone)) { ?>
+                    <a href="tel:+33<?php echo $phone ?>"> <?php echo '0'.$phone ?> </a> <?php
+                }
+                ?>
             </address>
         </article>
         <?php
