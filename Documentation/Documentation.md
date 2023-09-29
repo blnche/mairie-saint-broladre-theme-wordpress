@@ -36,6 +36,10 @@ Lorsque vous ajoutez du texte, il faut grouper les paragraphes que vous ne souha
 
 Si vous faites un retour à la ligne après le premier paragraphe, l'éditeur de wordpress peut créer un second paragrpahe. Dans ce cas-là, il faut sélectionner les deux paragraphes et cliquer sur les trois petits points et cliquer sur "Grouper".
 
+### Menu de la page d'accueil
+
+Attention si le titre d'une des pages présente dans le menu de la page d'accueil est changé, son image correspondante ne pourra plus être affichée.
+
 ## Ajouter un professionnel local
 
 1. Je créée une nouvelle page.
@@ -62,7 +66,7 @@ Si vous faites un retour à la ligne après le premier paragraphe, l'éditeur de
 2. Je lui attribue comme nom le nom du projet.
 3. Je lui ajoute comme page parente "Projets en cours".
 4. Je remplie le champ "Description courte du projet".
-5. Dans l'éditeur wordpress (zone en dessous du titre de la page en cours de création), je peux ajouter une image ou un PDF (**pas les deux en même temps**) ainsi que du texte.
+5. Dans l'éditeur wordpress (zone en dessous du titre de la page en cours de création), je peux ajouter une image ou un PDF (**pas les deux en même temps**) ainsi que du texte. *Il est fortement recommandé d'avoir au moins une image.*
 6. Je publie la page.
 
 

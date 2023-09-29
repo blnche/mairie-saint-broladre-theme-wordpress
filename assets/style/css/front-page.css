@@ -71,7 +71,7 @@
 .menu-homepage-container .mairie-menu a:before {
     padding: 0.5rem;
 
-    content: url("../../images/homepage-icon/icons8-wave-48-4.png");
+    content: url("../../../assets/images/homepage-icons/icons8-wave-48-4.png");
 
     position: absolute;
     left: 50%;

@@ -14,21 +14,19 @@
                         <img src="
                     <?php
                         if ($item->title === 'Conseil Municipal') {
-                            echo get_parent_theme_file_uri('assets/images/icons8-placeholder-96.png');
+                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-city-hall-40.png');
                         } else if ($item->title === 'Location de salles') {
-                            echo get_parent_theme_file_uri('assets/images/icons8-placeholder-96.png');
-                        } else if ($item->title === 'Restauration Scolaire') {
-                            echo get_parent_theme_file_uri('assets/images/icons8-placeholder-96.png');
+                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-lease-40.png');
+                        } else if ($item->title === 'Restaurant Scolaire') {
+                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-restaurant-building-40.png');
                         } else if ($item->title === 'Associations') {
-                            echo get_parent_theme_file_uri('assets/images/icons8-placeholder-96.png');
+                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-high-five-40.png');
                         } else if ($item->title === 'Annuaire de contacts') {
-                            echo get_parent_theme_file_uri('assets/images/icons8-placeholder-96.png');
-                        } else if ($item->title === 'Restauration Scolaire') {
-                            echo get_parent_theme_file_uri('assets/images/icons8-placeholder-96.png');
+                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-address-book-40.png');
                         } else if ($item->title === 'Agence Postale Communale') {
-                            echo get_parent_theme_file_uri('assets/images/icons8-placeholder-96.png');
+                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-post-office-40.png');
                         } else {
-                            echo get_parent_theme_file_uri('assets/images/icons8-placeholder-96.png');
+                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-full-image-40.png');
                         }
                         ?>
                 ">
