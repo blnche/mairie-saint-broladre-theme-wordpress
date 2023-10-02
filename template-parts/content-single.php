@@ -62,35 +62,6 @@
         <?php
         $content = parse_blocks(get_the_content(get_the_ID()));
 
-            ?>
-            <ul>
-                <?php
-        foreach ($content as $data) {
-                if ($data['blockName'] === 'core/list') {
-
-                    foreach ($data['innerBlocks'] as $listItem) {
-
-                        if ($listItem['blockName'] === 'core/list-item') {
-
-                            echo $listItem['innerHTML'];
-
-                            if (isset($listItem['innerBlocks']) && is_array($listItem['innerBlocks'])) {
-                                foreach ($listItem['innerBlocks'] as $nestedList) {
-                                    if ($nestedList['blockName'] === 'core/list') {
-                                        foreach ($nestedList['innerBlocks'] as $item) {
-                                            echo $item['innerHTML'];
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-        }
-                ?>
-            </ul>
-            <?php
-
         foreach ($content as $data) {
 
             if ($data['blockName'] === 'core/group') {

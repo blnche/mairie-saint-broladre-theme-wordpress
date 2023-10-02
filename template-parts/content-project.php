@@ -5,7 +5,7 @@
                 'parent' => $pageID,
             )
         );
-echo 'project';
+
 ?>
 <section class="last-project">
     <article>

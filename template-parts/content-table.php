@@ -1,4 +1,4 @@
-<?php echo 'table'; ?>
+
 <?php
 $content = parse_blocks(get_the_content(get_the_ID()));
 

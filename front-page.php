@@ -5,10 +5,12 @@
 </section>
 <section class="main-container">
     <section class="menu-homepage-container">
-        <?php $menuItems = getNavigationMenu();?>
+        <?php $menuItems = getNavigationMenu();
+        ?>
 
         <nav class="mairie-menu">
-            <?php foreach($menuItems as $item) {?>
+            <?php foreach($menuItems as $item) {
+                ?>
                 <a href=" <?= $item->url; ?> ">
                     <div class="svg-container">
                         <img src="
@@ -21,8 +23,8 @@
                             echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-cutlery-40.png');
                         } else if ($item->title === 'Associations') {
                             echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-high-five-40.png');
-                        } else if ($item->title === 'Annuaire de contacts') {
-                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-address-book-40.png');
+                        } else if ($item->title === "Plan Local d’Urbanisme") {
+                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-construction-40.png');
                         } else if ($item->title === 'Agence Postale Communale') {
                             echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-post-office-40.png');
                         } else {

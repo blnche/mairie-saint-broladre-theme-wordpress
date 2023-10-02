@@ -1,4 +1,4 @@
-<?php echo 'content-page'; ?>
+
 <section class="sub-pages-list">
     <nav>
     <?php

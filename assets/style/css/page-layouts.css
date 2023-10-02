@@ -59,6 +59,8 @@ body .main-container {
 
     border: 1px solid var(--clr-card-border);
     border-radius: 0.5rem;
+
+    text-align: center;
 }
 
 /* ============
@@ -296,6 +298,10 @@ body .main-container {
     border-radius: 0.5rem;
 }
 
+.main-container article div .wp-block-file object {
+    margin-bottom: 3rem;
+}
+
 .main-container article div a.wp-block-file__button.wp-element-button {
     padding: 1.5rem 2rem;
 
@@ -442,6 +448,7 @@ body .main-container {
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
         justify-items: center;
     }
 
@@ -520,10 +527,15 @@ body .main-container {
         grid-area: img;
     }
 
-    .main-container .single .img .wp-block-image {
+    .main-container .single .wp-block-image {
+        grid-row: span 5 !important;
+    }
+
+    .main-container .single .wp-block-image, .main-container .single .img .wp-block-image {
         width: auto;
 
         grid-area: img;
+        grid-row: span 5;
 
         flex-direction: column;
         justify-content: center;
