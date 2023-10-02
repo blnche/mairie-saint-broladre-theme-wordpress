@@ -1,6 +1,16 @@
 # Documentation pour le thème de la Mairie de Saint-Broladre
 
-## Ajouter l'image de la page d'accueil
+## Page d'accueil
+
+### L'article montré dans la section "Actualité" 
+
+1. Depuis l'espace admin, je clique sur "Articles" dans la colonne de gauche.
+2. Je crée un nouvel article.
+3. Je le publie. 
+
+Le dernier article créé apparaîtra automatiquement sur la page d'accueil.
+
+### Ajouter l'image de la page d'accueil
 
 1. Depuis l'espace admin, je survole "Apparence" dans la colonne de gauche et clique "Personnaliser".
 2. Je clique sur "Image d'en-tête".
@@ -9,7 +19,7 @@
 5. Je clique sur sélectionner, si l'image choisie est trop grande, Wordpress proposera de la recadrer.
 6. Je valide.
 
-## Ajouter l'icône pour l'onglet dans le navigateur
+### Ajouter l'icône pour l'onglet dans le navigateur
 
 1. Depuis l'espace admin, je survole "Apparence" dans la colonne de gauche et clique "Personnaliser".
 2. Je clique sur "Identité du site".
@@ -26,6 +36,10 @@ Possible uniquement pour :
 - un projet, 
 - une association.
 
+Vous pouvez utiliser les outils d'édition '**gras**', '*italique*'.
+
+Si vous utilisez l'outil 'liste', vous ne pourrez pas les grouper avec un autre paragraphe, sinon elles n'apparaîtront pas. Vous devez donc les utiliser seules ou créer un paragraphe qui 'ressemble' à une liste en utilisant des tirets (ex : - Élément de ma liste).
+
 Lorsque vous ajoutez du texte, il faut grouper les paragraphes que vous ne souhaitez pas voir séparés. 
 
 #### Exemple : 
@@ -35,6 +49,8 @@ Lorsque vous ajoutez du texte, il faut grouper les paragraphes que vous ne souha
 - Second paragraphe : Des bandes dessinées, des albums jeunesse, des romans pour tous les âges, des romans policiers, des mangas, des DVD, des livres en gros caractères et des livres audio. Et vous pouvez découvrir tous les documents disponibles dans les 12 bibliothèques du territoire sur le site de « Lire en Baie », n’hésitez pas à venir nous voir et nous demander conseil.
 
 Si vous faites un retour à la ligne après le premier paragraphe, l'éditeur de wordpress peut créer un second paragrpahe. Dans ce cas-là, il faut sélectionner les deux paragraphes et cliquer sur les trois petits points et cliquer sur "Grouper".
+
+Pour la **page de politique de confidentialité**, utilisé des titres de type h2 pour les sous-parties, et bien grouper le titre avec son paragraphe.
 
 ### Menu de la page d'accueil
 

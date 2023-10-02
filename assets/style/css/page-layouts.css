@@ -1,3 +1,11 @@
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
 body .main-container {
     padding-block: 1rem;
 
@@ -265,6 +273,10 @@ body .main-container {
     order: 1;
 }
 
+.main-container article ul {
+    list-style: square;
+}
+
 .main-container article figure {
     order: 0;
 
@@ -316,6 +328,11 @@ body .main-container {
 
 .main-container .single {
     display: flex;
+}
+
+.main-container .single h2 {
+    font-size: var(--fs-page-title);
+    text-align: center;
 }
 
 .main-container .single p {
@@ -487,6 +504,10 @@ body .main-container {
                 "text address";
     }
 
+    .main-container .flex {
+        display: flex;
+    }
+
     .main-container .single .text {
         grid-area: text;
     }
@@ -603,6 +624,10 @@ body .main-container {
         grid-template-areas:
                 "text img"
                 "text address";
+    }
+
+    .main-container .flex {
+        display: flex;
     }
 
     .main-container .single .text {
