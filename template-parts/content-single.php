@@ -90,6 +90,9 @@ else {
                     if ($blocks['blockName'] === 'core/table') {
                         echo  $blocks['innerHTML'];
                     }
+                    if($blocks['blockName'] === 'core/image'){
+                        echo $blocks['innerHTML'];
+                    }
                 }
             }
             if ($data['blockName'] === 'core/paragraph') {

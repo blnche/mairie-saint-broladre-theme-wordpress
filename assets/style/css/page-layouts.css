@@ -612,6 +612,12 @@ body .main-container {
                 "text address";
     }
 
+    .main-container .single p > a {
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: var(--clr-accent);
+    }
+
     .main-container .flex {
         display: flex;
     }
@@ -640,7 +646,7 @@ body .main-container {
 
         background-color: var(--clr-background);
     }
-    
+
     .main-container .single .img .wp-block-image {
         width: auto;
 

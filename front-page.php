@@ -19,7 +19,7 @@
                             echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-cutlery-40.png');
                         } else if ($item->title === "Plan Local d’Urbanisme") {
                             echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-construction-40.png');
-                        } else if ($item->title === "Démarches Administratives") {
+                        } else if ($item->title === "Vie Administrative") {
                             echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-administrateur-homme-40.png');
                         } else if ($item->title === "Vivre à Saint-Broladre") {
                             echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-randonnee-40.png');
@@ -37,33 +37,7 @@
 
     <section class="news-container">
         <section class="news">
-            <h2>Actualités</h2>
-            <?php
-            $latest_posts = get_posts(array(
-                'post_type' => 'post',
-                'posts_per_page' => 1,
-            ));
-            if ($latest_posts) {
-                foreach ($latest_posts as $post) {
-                    setup_postdata($post); ?>
-                    <article>
-                        <header>
-                            <?php
-                            if (has_post_thumbnail()) {
-                                //the_post_thumbnail();
-                            }
-                            ?>
-                        </header>
-                        <section>
-                            <h3><?php the_title(); ?></h3>
-                            <p><?php the_excerpt(); ?></p>
-                        </section>
-                        <footer><a href="<?php the_permalink(); ?>">Lire la suite</a></footer>
-                    </article>
-                <?php }
-                wp_reset_postdata();
-            }
-            ?>
+            <img src="assets/images/homepage-icons/icons8-address-book-40.png" alt="">
         </section>
         <section class="agenda">
             <h2>Agenda</h2>

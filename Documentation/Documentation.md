@@ -63,7 +63,8 @@ Attention si le titre d'une des pages présente dans le menu de la page d'accuei
 3. Je lui ajoute comme page parente "Professionnels Locaux".
 4. S'il s'agit d'un professionnel de la santé je coche la case "Professionnel de la santé ?".
 5. Je remplie les différents champs (adresse, contact, etc.). S'il s'agit d'un professionnel de la santé un champ supplémentaire doit être précisé : l'ordre auquel le professionnel appartient.
-6. Je publie la page.
+6. Je note les informations dans un paragraphe dans l'éditeur.
+7. Je publie la page.
 
 **Si l'odre pour le professionnel de la santé n'existe pas dans la liste proposée, voir plus bas.**
 
