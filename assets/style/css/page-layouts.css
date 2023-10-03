@@ -402,6 +402,106 @@ body .main-container {
     color: var(--clr-element-border-active);
 }
 
+/* CONTACT FORM */
+.main-container .wpcf7 > form > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.main-container .wpcf7 > form > p input, .main-container .wpcf7 > form > p textarea {
+    margin-block: 1rem;
+    padding: 1rem;
+
+    box-shadow: 0 4px 24px -6px var(--clr-card-shadow);
+
+    border: 1px solid var(--clr-element-border);
+    border-radius: 0.5rem;
+}
+
+.main-container .wpcf7 > form > p select {
+    margin-block: 1rem;
+    padding: 1rem;
+}
+
+.main-container .wpcf7 > form > p .wpcf7-submit {
+    width: fit-content;
+
+    margin-block: 1rem;
+    padding: 1rem 1.5rem;
+
+    background-color: var(--clr-button-background);
+    box-shadow: 0 4px 24px -6px var(--clr-button-shadow);
+
+    border: 1px solid var(--clr-button-border);
+    border-radius: 0.5rem;
+
+    color: var(--clr-text-high-contrast);
+
+    cursor: pointer;
+}
+
+.main-container .wpcf7 > form > p .wpcf7-submit:hover {
+    background-color: var(--clr-button-background-hover);
+
+    border: 1px solid var(--clr-button-border-active);
+}
+
+.main-container .wpcf7 > form > p .wpcf7-submit:active {
+    background-color: var(--clr-button-background-active);
+
+    border: 1px solid var(--clr-button-border-active);
+}
+
+/* CANTINE */
+
+.main-container .sub-pages-list nav .red {
+    background-color: #fdbdbe;
+    box-shadow: 0 4px 24px -6px #e5484d;
+
+    border: 1px solid #e5484d;
+    border-radius: 0.5rem;
+}
+
+.main-container .sub-pages-list nav .red:hover {
+    background-color: #f4a9aa;
+
+    border: 1px solid #e5484d;
+}
+
+.main-container .sub-pages-list nav .red:active {
+    background-color: #eb8e90;
+
+    border: 1px solid #dc3e42;.
+}
+
+
+.main-container .sub-pages-list nav .blue {
+    background-color: hsl(209, 81.2%, 84.5%);
+    box-shadow: 0 4px 24px -6px var(--clr-button-shadow);
+
+    border: 1px solid hsl(206, 100%, 50.0%);
+    border-radius: 0.5rem;
+}
+
+.main-container .sub-pages-list nav .blue:hover {
+    background-color: hsl(208, 77.5%, 76.9%);
+
+    border: 1px solid hsl(208, 93.5%, 47.4%);
+}
+
+.main-container .sub-pages-list nav .blue:active {
+    background-color: hsl(206, 81.9%, 65.3%);
+
+    border: 1px solid hsl(208, 93.5%, 47.4%);
+}
+
+
+
+
 /*
     ==================
         SMALLER MOBILE

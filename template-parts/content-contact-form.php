@@ -1,2 +1,2 @@
 <?php
-echo do_shortcode("[contact-form-7 id='70d5905' title='Contact form 1']"); ?>
+echo do_shortcode('[contact-form-7 id="c1845ac" title="Formulaire de contact 1"]'); ?>

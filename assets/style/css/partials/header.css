@@ -84,6 +84,10 @@ body .header {
 
     position: relative;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border-radius: 0.5rem;
 
     text-align: center;
@@ -125,6 +129,10 @@ body .header {
 
 .header-container nav .menu-menu-principal-container .site-links li [aria-current='page'] {
     border-bottom: 2px solid var(--clr-accent);
+}
+
+.header-container nav .menu-menu-principal-container .site-links li a {
+    line-height: 1.5;
 }
 
 .header-container nav .menu-menu-principal-container .site-links .subMenuParent {
@@ -360,7 +368,7 @@ body .header {
         display: none;
 
         position: absolute;
-        top: 3rem;
+        top: 3.5rem;
 
         background-color: var(--clr-background);
         box-shadow: 0 9px 38px -11px var(--clr-card-shadow);

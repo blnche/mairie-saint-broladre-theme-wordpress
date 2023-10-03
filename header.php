@@ -47,8 +47,7 @@
             );
         ?>
         <ul class="contact-links">
-            <li><a href="/contact-page-layout.html" class="contact-link">Nous contacter</a></li>
-            <li><a href="tel:+33" class="contact-phone">02 01 03 04 05</a></li>
+            <li><a href="tel:+33299802569" class="contact-phone">02 99 80 25 69</a></li>
         </ul>
         <?php get_search_form(); ?>
         </nav>

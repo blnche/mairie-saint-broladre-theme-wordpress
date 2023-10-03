@@ -6,6 +6,12 @@
     <?php
         if (get_the_title() === 'Nous contacter') {
             get_template_part('template-parts/content', 'contact-form');
+        } else if (get_the_title() === 'Restaurant Scolaire') {
+            get_template_part('template-parts/content', 'cantine');
+        } else if (get_the_title() === 'Inscription à la cantine') {
+            get_template_part('template-parts/content', 'cantine-inscription');
+        } else if (get_the_title() === 'Désinscription à la cantine') {
+            get_template_part('template-parts/content', 'cantine-desinscription');
         } else if (get_the_title() === 'Projets en cours') {
             get_template_part('template-parts/content', 'project');
         } else if (get_the_title() === 'Professionnels Locaux') {

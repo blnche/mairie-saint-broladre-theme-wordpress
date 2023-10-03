@@ -15,18 +15,14 @@
                     <div class="svg-container">
                         <img src="
                     <?php
-                        if ($item->title === 'Conseil Municipal') {
-                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-clipboard-40.png');
-                        } else if ($item->title === 'Location de salles') {
-                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-lease-40.png');
-                        } else if ($item->title === 'Restaurant Scolaire') {
+                        if ($item->title === 'Restaurant Scolaire') {
                             echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-cutlery-40.png');
-                        } else if ($item->title === 'Associations') {
-                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-high-five-40.png');
                         } else if ($item->title === "Plan Local d’Urbanisme") {
                             echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-construction-40.png');
-                        } else if ($item->title === 'Agence Postale Communale') {
-                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-post-office-40.png');
+                        } else if ($item->title === "Démarches Administratives") {
+                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-administrateur-homme-40.png');
+                        } else if ($item->title === "Vivre à Saint-Broladre") {
+                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-randonnée-40.png');
                         } else {
                             echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-full-image-40.png');
                         }
