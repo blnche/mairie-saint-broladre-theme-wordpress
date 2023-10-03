@@ -77,7 +77,7 @@
         <h2>Informations sur la Mairie</h2>
         <address>
             <p>Adresse : </p>
-            <p>9 rue de la Mairie, </p>
+            <p>Rue de la Mairie, </p>
             <p>35120 Saint-Broladre</p>
         </address>
         <ul>

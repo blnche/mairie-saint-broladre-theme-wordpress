@@ -101,3 +101,12 @@ Attention si le titre d'une des pages présente dans le menu de la page d'accuei
 4. Dans le champ "Choix", je fais un retour à la ligne à la suite du dernier ordre renseigné.
 5. J'écris le nom de l'ordre à ajouter.
 6. Je clique sur "Enregistrer les modifications" tout en haut à droite.
+
+# Formulaire 
+Présents dans la partie à gauche sous 'Contact'.
+
+Pour modifier les options possibles pour la sélection de sujet du formulaire de contact 1 :
+1. Je clique sur 'Contact', puis sur 'Formulaire de contact 1'.
+2. Dans l'encadré 'Formulaire', je viens trouver `<label> Sujet
+   [select* your-subject menu-951 include_blank "Voierie" "Demande de contact" "Etc"] </label>`.
+3. Je peux rajouter mes options entre doubles guillements (`""`) à la suite de celles déjà existantes. **Ne pas toucher au `<label>`**.

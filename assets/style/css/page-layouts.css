@@ -603,6 +603,7 @@ body .main-container {
 
     /* single post or associations */
 
+
     .main-container .single {
         display: grid;
         grid-gap: 2rem;
@@ -628,10 +629,19 @@ body .main-container {
     }
 
     .main-container .single .wp-block-image {
-        grid-row: span 5 !important;
-    }
+        width: auto;
 
-    .main-container .single .wp-block-image, .main-container .single .img .wp-block-image {
+        grid-area: unset;
+        grid-row: span 5;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: var(--clr-background);
+    }
+    
+    .main-container .single .img .wp-block-image {
         width: auto;
 
         grid-area: img;
