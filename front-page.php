@@ -22,7 +22,7 @@
                         } else if ($item->title === "Démarches Administratives") {
                             echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-administrateur-homme-40.png');
                         } else if ($item->title === "Vivre à Saint-Broladre") {
-                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-randonnée-40.png');
+                            echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-randonnee-40.png');
                         } else {
                             echo get_parent_theme_file_uri('assets/images/homepage-icons/icons8-full-image-40.png');
                         }
@@ -71,6 +71,19 @@
                 <?php echo do_shortcode('[events_list limit="5"] <li>#_EVENTNAME, #_EVENTDATES {has_time} , de #_EVENTTIMES {/has_time}</li>[/events_list]'); ?>
             </ul>
         </section>
+    </section>
+
+    <section class="infos">
+        <h2>Informations sur la Mairie</h2>
+        <address>
+            <p>Adresse : </p>
+            <p>9 rue de la Mairie, </p>
+            <p>35120 Saint-Broladre</p>
+        </address>
+        <ul>
+            <li>Du lundi au vendredi (sauf les mercredis) : 8h30-12h30 / 14h00-17h00</li>
+            <li>Le mercredi : 8h30-12h30</li>
+        </ul>
     </section>
 </section>
 

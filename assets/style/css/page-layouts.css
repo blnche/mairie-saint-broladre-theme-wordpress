@@ -460,7 +460,7 @@ body .main-container {
 
 .main-container .sub-pages-list nav .red {
     background-color: #fdbdbe;
-    box-shadow: 0 4px 24px -6px #e5484d;
+    box-shadow: 0 4px 24px -6px var(--clr-button-shadow);
 
     border: 1px solid #e5484d;
     border-radius: 0.5rem;

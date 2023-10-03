@@ -240,6 +240,67 @@
     box-shadow: 0 4px 24px -6px var(--clr-card-shadow);
 }
 
+/* ============
+    INFOS
+   ============ */
+
+.main-container .infos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+.main-container .infos h2 {
+    margin-block: 2rem;
+
+    grid-column: span 2;
+
+    font-size: var(--fs-section-title);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.main-container .infos h2:after {
+    width: 10rem;
+    height: 0.35rem;
+
+    margin: 3rem auto;
+
+    content: "";
+
+    display: block;
+
+    background-color: var(--clr-accent);
+}
+
+.main-container .infos ul, .main-container .infos address {
+    margin-block: 2rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: var(--clr-card-background);
+    border : 1px solid var(--clr-card-border);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 24px -6px var(--clr-card-shadow);
+}
+
+.main-container .infos ul {
+    align-items: flex-start;
+}
+
+.main-container .infos address {
+    align-items: center;
+}
+
+.main-container .infos address p, .main-container .infos ul li  {
+    padding: 1rem;
+}
+
+
 /* 
     =============
         TABLET
