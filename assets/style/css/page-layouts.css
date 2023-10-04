@@ -231,6 +231,7 @@ body .main-container {
 
 .main-container .professionals-list article address a {
     position: relative;
+    letter-spacing: 0.1rem;
 }
 
 .main-container .professionals-list article address a:after {
