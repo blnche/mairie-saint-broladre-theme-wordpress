@@ -133,6 +133,10 @@
     margin-block: 2rem;
     padding: 4rem;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: var(--clr-element-background);
 
     border-top: 1px solid var(--clr-element-border);
@@ -147,6 +151,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.main-container .news-container .news article img {
+    margin-block: 1rem;
+
+    border: 1px solid var(--clr-element-border);
+    border-radius: 0.5rem;
 }
 
 .main-container .news-container .news article header {

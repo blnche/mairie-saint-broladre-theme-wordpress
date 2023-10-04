@@ -37,7 +37,10 @@
 
     <section class="news-container">
         <section class="news">
-            <img src="assets/images/homepage-icons/icons8-address-book-40.png" alt="">
+            <article>
+                <img src="<?= get_parent_theme_file_uri('assets/images/homepage-image-2.jpeg'); ?>" alt="">
+                <img src="<?= get_parent_theme_file_uri('assets/images/homepage-image.jpeg'); ?>" alt="">
+            </article>
         </section>
         <section class="agenda">
             <h2>Agenda</h2>

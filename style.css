@@ -46,6 +46,12 @@ body {
     background-color: var(--clr-subtle-background);
 
     font-size: var(--fs-body);
+
+}
+
+body p {
+    text-align: justify;
+
 }
 
 .header, .main, .footer {
