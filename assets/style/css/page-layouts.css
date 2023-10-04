@@ -360,6 +360,8 @@ body .main-container {
 
 .main-container .single address a {
     position: relative;
+
+    letter-spacing: 0.1rem;
 }
 
 .main-container .single address a:after {
