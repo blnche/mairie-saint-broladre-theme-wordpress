@@ -3,50 +3,14 @@
 <?php // ASSOCIATIONS
 if (get_field('association_true_false', get_the_ID() === true )) {
 ?>
-<article class="single">
-    <?php // Check if it's an association
-
-        $content = parse_blocks(get_the_content(get_the_ID()));
-
-        // TEXT
-        ?>
+<article class="single flex">
+    
     <section class="text">
-    <?php
-        foreach ($content as $data) {
-            if ($data['blockName'] === 'core/group') {
-                foreach ($data['innerBlocks'] as $blocks) {
-                    if ($blocks['blockName'] === 'core/heading') {
-                        echo $blocks['innerHTML'];
-                    }
-                    if ($blocks['blockName'] === 'core/paragraph') {
-                        echo $blocks['innerHTML'];
-                    }
-                    if ($blocks['blockName'] === 'core/table') {
-                        echo  $blocks['innerHTML'];
-                    }
-                }
-            }
-            if ($data['blockName'] === 'core/paragraph') {
-                echo $data['innerHTML'];
-            }
-            if ($data['blockName'] === 'core/table') {
-                echo  $data['innerHTML'];
-            }
-        }
-        ?>
+        <?php the_content(); ?>
     </section>
-    <?php
-
-        //IMG
-        ?>
+    
     <section class="img">
-        <?php
-        foreach ($content as $data) {
-            if ($data['blockName'] === 'core/image') {
-                echo $data['innerHTML'];
-            }
-        }
-        ?>
+        
     </section>
     <address>
         <?php
@@ -72,40 +36,8 @@ if (get_field('association_true_false', get_the_ID() === true )) {
 }
 else {
     ?>
-    <article class="single projet <?php if(get_the_title() === 'Mentions Légales') {echo 'flex';};?>">
-        <?php
-        $content = parse_blocks(get_the_content(get_the_ID()));
-
-        foreach ($content as $data) {
-
-            if ($data['blockName'] === 'core/group') {
-                foreach ($data['innerBlocks'] as $blocks) {
-
-                    if ($blocks['blockName'] === 'core/heading') {
-                        echo $blocks['innerHTML'];
-                    }
-                    if ($blocks['blockName'] === 'core/paragraph') {
-                        echo $blocks['innerHTML'];
-                    }
-                    if ($blocks['blockName'] === 'core/table') {
-                        echo  $blocks['innerHTML'];
-                    }
-                    if($blocks['blockName'] === 'core/image'){
-                        echo $blocks['innerHTML'];
-                    }
-                }
-            }
-            if ($data['blockName'] === 'core/paragraph') {
-                echo $data['innerHTML'];
-            }
-            if($data['blockName'] === 'core/image'){
-                echo $data['innerHTML'];
-            }
-            if($data['blockName'] === 'core/file') {
-                echo $data['innerHTML'];
-            }
-        }
-        ?>
+    <article class="single projet flex">
+        <?php the_content(); ?>
 </article>
 <?php
     }

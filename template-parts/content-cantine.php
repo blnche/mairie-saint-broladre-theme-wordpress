@@ -1,40 +1,10 @@
-<article class="single">
-    <?php
-    $content = parse_blocks(get_the_content(get_the_ID()));
+<article class="single">   
+    <section class="text">
+        <?php the_content(); ?>
+    </section>
 
-    // TEXT
-    ?>    <section class="text"><?php
-        foreach ($content as $data) {
-            if ($data['blockName'] === 'core/group') {
-                foreach ($data['innerBlocks'] as $blocks) {
-                    if ($blocks['blockName'] === 'core/heading') {
-                        echo $blocks['innerHTML'];
-                    }
-                    if ($blocks['blockName'] === 'core/paragraph') {
-                        echo $blocks['innerHTML'];
-                    }
-                    if ($blocks['blockName'] === 'core/table') {
-                        echo  $blocks['innerHTML'];
-                    }
-                }
-            }
-            if ($data['blockName'] === 'core/paragraph') {
-                echo $data['innerHTML'];
-            }
-            if ($data['blockName'] === 'core/table') {
-                echo  $data['innerHTML'];
-            }
-        }
-        ?></section><?php
-
-    //IMG
-    ?><section class="img"><?php
-        foreach ($content as $data) {
-            if ($data['blockName'] === 'core/image') {
-                echo $data['innerHTML'];
-            }
-        }
-        ?></section>
+    <section class="img">
+    </section>
 </article>
 <section class="sub-pages-list cantine">
     <nav>

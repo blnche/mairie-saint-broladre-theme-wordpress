@@ -1,17 +1,7 @@
+<article>
+    <?php the_content(); ?>
+</article> 
 
-<?php
-$content = parse_blocks(get_the_content(get_the_ID()));
-
-foreach ($content as $data) {
-
-    if ($data['blockName'] === 'core/paragraph') {
-        ?>
-        <article>
-            <?php echo $data['innerHTML']; ?>
-        </article> <?php
-    }
-}
-?>
 <section class="professionals-list">
     <h2>Professionnels Santé</h2>
     <?php

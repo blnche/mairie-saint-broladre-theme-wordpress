@@ -32,25 +32,10 @@ Le dernier article créé apparaîtra automatiquement sur la page d'accueil.
 
 ### Ajout de texte dans une nouvelle page
 Possible uniquement pour :
-- un article (La presse en parle), 
-- un projet, 
-- une association.
-
-Vous pouvez utiliser les outils d'édition '**gras**', '*italique*'.
-
-Si vous utilisez l'outil 'liste', vous ne pourrez pas les grouper avec un autre paragraphe, sinon elles n'apparaîtront pas. Vous devez donc les utiliser seules ou créer un paragraphe qui 'ressemble' à une liste en utilisant des tirets (ex : - Élément de ma liste).
-
-Lorsque vous ajoutez du texte, il faut grouper les paragraphes que vous ne souhaitez pas voir séparés. 
-
-#### Exemple : 
-
-- Premier paragraphe : Dans notre médiathèque on peut retrouver :
-
-- Second paragraphe : Des bandes dessinées, des albums jeunesse, des romans pour tous les âges, des romans policiers, des mangas, des DVD, des livres en gros caractères et des livres audio. Et vous pouvez découvrir tous les documents disponibles dans les 12 bibliothèques du territoire sur le site de « Lire en Baie », n’hésitez pas à venir nous voir et nous demander conseil.
-
-Si vous faites un retour à la ligne après le premier paragraphe, l'éditeur de wordpress peut créer un second paragrpahe. Dans ce cas-là, il faut sélectionner les deux paragraphes et cliquer sur les trois petits points et cliquer sur "Grouper".
-
-Pour la **page de politique de confidentialité**, utilisé des titres de type h2 pour les sous-parties, et bien grouper le titre avec son paragraphe.
+- un article (La presse en parle)
+- un projet
+- une association
+- un professionnel
 
 ### Menu de la page d'accueil
 
