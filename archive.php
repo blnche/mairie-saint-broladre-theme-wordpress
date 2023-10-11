@@ -1,14 +1,32 @@
-//The archive template is used when visitors request posts by category, author, or date. Note: this template will be overridden if more specific templates are present like category.php, author.php, and date.php.
 <?php get_header(); ?>
-<article>
+<section>
     <?php
-    if(have_posts()) {
-        while(have_posts()) {
-            the_post();
-            get_template_part('template-parts/content', 'archive');
-        }
+    $posts = get_posts(array(
+        'post_type' => 'post'
+    ));
+
+    foreach($posts as $post) {
+        ?>
+        <article>
+            <header>
+                <?php
+                if (has_post_thumbnail()) {
+                    //the_post_thumbnail();
+                }
+                ?>
+            </header>
+            <section>
+                <h3><?php the_title(); ?></h3>
+                <p><?php the_excerpt(); ?></p>
+            </section>
+            <footer>
+                <a href="<?php the_permalink(); ?>">Lire la suite</a>
+                <a href="https://www.saint-broladre.bzh/blog">Voir tous les articles</a>
+            </footer>
+        </article>
+        <?php
     }
     ?>
-</article>
+</section>
 <?php get_footer(); ?>
 

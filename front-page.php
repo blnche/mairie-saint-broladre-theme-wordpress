@@ -37,10 +37,36 @@
 
     <section class="news-container">
         <section class="news">
-            <article>
-                <img src="<?= get_parent_theme_file_uri('assets/images/homepage-image-2.jpeg'); ?>" alt="">
-                <img src="<?= get_parent_theme_file_uri('assets/images/homepage-image.jpeg'); ?>" alt="">
-            </article>
+            <h2>Actualités</h2>
+                <?php
+                $latest_posts = get_posts(array(
+                    'post_type' => 'post',
+                    'posts_per_page' => 1,
+                ));
+                if ($latest_posts) {
+                    foreach ($latest_posts as $post) {
+                        setup_postdata($post); ?>
+                        <article>
+                            <header>
+                                <?php
+                                if (has_post_thumbnail()) {
+                                    //the_post_thumbnail();
+                                }
+                                ?>
+                            </header>
+                            <section>
+                                <h3><?php the_title(); ?></h3>
+                                <p><?php the_excerpt(); ?></p>
+                            </section>
+                            <footer>
+                                <a href="<?php the_permalink(); ?>">Lire la suite</a>
+                                <a href="https://www.saint-broladre.bzh/blog">Voir tous les articles</a>
+                            </footer>
+                        </article>
+                    <?php }
+                    wp_reset_postdata();
+                }
+                ?>
         </section>
         <section class="agenda">
             <h2>Agenda</h2>
@@ -48,6 +74,11 @@
                 <?php echo do_shortcode('[events_list limit="5"] <li>#_EVENTNAME, #_EVENTDATES {has_time} , de #_EVENTTIMES {/has_time}</li>[/events_list]'); ?>
             </ul>
         </section>
+    </section>
+
+    <section class="images">
+        <img src="<?= get_parent_theme_file_uri('assets/images/homepage-image-2.jpeg'); ?>" alt="">
+        <img src="<?= get_parent_theme_file_uri('assets/images/homepage-image.jpeg'); ?>" alt="">
     </section>
 
     <section class="infos">
